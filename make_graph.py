@@ -23,9 +23,15 @@ def dist(p1, p2):
 
 
 
+
+
+
+
 ## Load GPS data
-with open('store.json') as f:
+fname = 'store.json'
+with open(fname) as f:
     store = json.load(f)
+
 
 
 
