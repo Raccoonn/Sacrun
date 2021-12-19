@@ -37,9 +37,7 @@ def map_intersections(f_bounds, f_coords):
 if __name__ == '__main__':
 
     f_bounds = 'small_bounds.txt'
-    f_coords = 'xs_gps/025407_final_xs_gps_store.json'
+    f_coords = 'xs_gps/030316_final_xs_gps_store.json'
     map_intersections(f_bounds, f_coords)
     print('\nIntersections plotted')
-
-    input()
 

@@ -45,14 +45,18 @@ def dist(p1, p2):
 
 
 ## Load GPS data
-fname = 'store.json'
+fname = 'xs_gps/030316_final_xs_gps_store.json'
 with open(fname) as f:
     store = json.load(f)
 
-
-
 ## Conversion dictionaries for easier xs <-> node number lookup
 n_to_xs = {n : xs for n, xs in enumerate(store)}
+
+
+## Add each node in store with intersection/gps stored as attributes
+G = nx.Graph()
+for i, point in enumerate(store):
+    G.add_node(i, xs=point, gps=store[point])
 
 
 
@@ -67,11 +71,19 @@ for i, ix1 in enumerate(store):
 
 
 
+## Link intersections
+for n, x1 in enumerate(store):
+    gps_1 = store[x1]
 
-## Add each node in store with intersection/gps stored as attributes
-G = nx.Graph()
-for i, point in enumerate(store):
-    G.add_node(i, xs=point, gps=store[point])
+    closest = np.argsort(adj[n])[1:8]
+
+    for i in closest:
+        x2 = n_to_xs[i]
+        gps_2 = store[x2]
+
+
+
+
 
 
 
