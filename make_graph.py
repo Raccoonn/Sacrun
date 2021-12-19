@@ -66,47 +66,60 @@ gmap = gmplot.GoogleMapPlotter(lat, lon, 15)
 
 ## Link intersections
 
-for n, xs_1 in enumerate(store):
+for i, xs_1 in enumerate(store):
     neighbors = [None] * 4
     gps_1 = store[xs_1]
     streets = xs_1.split(' & ')
 
-    for i in np.argsort(adj[n])[1:7]:
-        xs_2 = n_to_xs[i]
+
+    for j in np.argsort(adj[i])[1:5]:
+        xs_2 = n_to_xs[j]
         gps_2 = store[xs_2]
 
         if streets[0] in xs_2.split(' & '):
             if neighbors[0] == None:
-                neighbors[0] = (i, xs_2, gps_2)
+                neighbors[0] = (j, xs_2, gps_2)
 
-            else:
+            elif neighbors[1] == None:
                 gps_n = neighbors[0][2]
                 if min((gps_2[0], gps_n[0])) < gps_1[0] < max((gps_2[0], gps_n[0])) and \
                    min((gps_2[1], gps_n[1])) < gps_1[1] < max((gps_2[1], gps_n[1])):
 
-                   neighbors[1] = (i, xs_2, gps_2)
+                   neighbors[1] = (j, xs_2, gps_2)
+
 
 
 
         if streets[1] in xs_2.split(' & '):
             if neighbors[2] == None:
-                neighbors[2] = (i, xs_2, gps_2)
+                neighbors[2] = (j, xs_2, gps_2)
 
-            else:
+            elif neighbors[3] == None:
                 gps_n = neighbors[2][2]
                 if min((gps_2[0], gps_n[0])) < gps_1[0] < max((gps_2[0], gps_n[0])) and \
                    min((gps_2[1], gps_n[1])) < gps_1[1] < max((gps_2[1], gps_n[1])):
-                   neighbors[3] = (i, xs_2, gps_2)
+
+                   neighbors[3] = (j, xs_2, gps_2)
+
 
 
         if None not in neighbors:
             break
 
     
-    for nei in neighbors:
-        if nei != None:
-            G.add_edge(n, nei[0], weight=adj[n, nei[0]])
-            gmap.plot(*zip(*[gps_1, nei[2]]), edge_width=5, color='black')
+    for n in neighbors:
+        if n != None:
+            G.add_edge(i, n[0], weight=adj[i, n[0]])
+            gmap.plot(*zip(*[gps_1, n[2]]), edge_width=5, color='black')
+
+
+
+print(len(G.nodes))
+print(len(G.edges))
+print(n_to_xs[84])
+
+nx.draw(G, with_labels=True)
+plt.show()
 
 
 
