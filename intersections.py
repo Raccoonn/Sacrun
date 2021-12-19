@@ -62,7 +62,7 @@ def get_coords(bounds, sleeps=0, dx=50, dy=50, username='raccoonn'):
                     ix = sorted((data['intersection']['street1'], data['intersection']['street2']))
                     gps = (float(data['intersection']['lat']), float(data['intersection']['lng']))
                     intersection = ix[0] + ' & ' + ix[1]
-                    if intersection not in store:
+                    if intersection not in store and B.contains(Point(gps)):
                         logging.info('New intersection: ' + str(intersection) + ' - ' + str(gps))
                         store[intersection] = gps
 
@@ -100,13 +100,13 @@ def get_coords(bounds, sleeps=0, dx=50, dy=50, username='raccoonn'):
 if __name__ == '__main__':
 
     ## Load GPS boundaries
-    f_bounds = 'bounds_full_grid.txt'
+    f_bounds = 'small_bounds.txt'
     with open(f_bounds) as f:
         bounds = [[float(n) for n in line.split(', ')] for line in f.read().splitlines()]
 
 
     ## Get intersections within boundaries
-    sleeps, dx, dy = 10, 100, 100
+    sleeps, dx, dy = 10, 10, 10
     store, e_code = get_coords(bounds, sleeps, dx, dy)
 
     logging.info('Function completed, exit code: %d' % e_code)

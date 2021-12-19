@@ -14573,3 +14573,260 @@
 2021-12-19 01:49:25 INFO API Call limit reached, writing current dictionary
 2021-12-19 01:49:25 WARNING API call limit reached, sleeping for one hour...
 2021-12-19 01:49:25 WARNING 7 sleeps remaining
+2021-12-19 02:53:47 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:53:48 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.56722107754617&lng=-121.5044224264537&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:53:48 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.56722107754617&lng=-121.5044224264537&username=raccoonn
+2021-12-19 02:53:48 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.504951', 'distance': '0.05', 'bearing': '297', 'placename': 'Sacramento', 'street1Bearing': '108', 'street2Bearing': '198', 'adminName2': 'Sacramento', 'postalcode': '95818', 'countryCode': 'US', 'street1': 'W St', 'street2': '6th St', 'adminName1': 'California', 'lat': '38.567439'}}
+2021-12-19 02:53:48 INFO New intersection: 6th St & W St - (38.567439, -121.504951)
+2021-12-19 02:53:48 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:53:48 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.56722107754617&lng=-121.50304913551702&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:53:48 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.56722107754617&lng=-121.50304913551702&username=raccoonn
+2021-12-19 02:53:48 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.502317', 'distance': '0.08', 'bearing': '130', 'placename': 'Sacramento', 'street1Bearing': '108', 'street2Bearing': '198', 'adminName2': 'Sacramento', 'postalcode': '95818', 'countryCode': 'US', 'street1': 'W St', 'street2': '8th St', 'adminName1': 'California', 'lat': '38.566736999999996'}}
+2021-12-19 02:53:48 INFO New intersection: 8th St & W St - (38.566736999999996, -121.502317)
+2021-12-19 02:53:48 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:53:49 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.56722107754617&lng=-121.50167584458035&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:53:49 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.56722107754617&lng=-121.50167584458035&username=raccoonn
+2021-12-19 02:53:49 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1730', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.502088', 'distance': '0.04', 'bearing': '278', 'placename': 'Sacramento', 'street1Bearing': '108', 'street2Bearing': '198', 'adminName2': 'Sacramento', 'postalcode': '', 'countryCode': 'US', 'street1': 'V St W St Aly', 'street2': '8th St', 'adminName1': 'California', 'lat': '38.56727'}}
+2021-12-19 02:53:49 INFO New intersection: 8th St & V St W St Aly - (38.56727, -121.502088)
+2021-12-19 02:53:49 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:53:49 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.56722107754617&lng=-121.50030255364366&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:53:49 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.56722107754617&lng=-121.50030255364366&username=raccoonn
+2021-12-19 02:53:49 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.500509', 'distance': '0.03', 'bearing': '326', 'placename': 'Sacramento', 'street1Bearing': '108', 'street2Bearing': '198', 'adminName2': 'Sacramento', 'postalcode': '95818', 'countryCode': 'US', 'street1': 'V St', 'street2': '9th St', 'adminName1': 'California', 'lat': '38.567463'}}
+2021-12-19 02:53:49 INFO New intersection: 9th St & V St - (38.567463, -121.500509)
+2021-12-19 02:53:49 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:53:49 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.56862139019525&lng=-121.50716900832705&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:53:49 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.56862139019525&lng=-121.50716900832705&username=raccoonn
+2021-12-19 02:53:49 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1730', 'adminCode1': 'CA', 'lng': '-121.507391', 'distance': '0.02', 'bearing': '292', 'placename': 'Sacramento', 'street1Bearing': '198', 'street2Bearing': '109', 'adminName2': 'Sacramento', 'postalcode': '', 'countryCode': 'US', 'street1': '4th St', 'street2': 'V St W St Aly', 'adminName1': 'California', 'lat': '38.568692'}}
+2021-12-19 02:53:49 INFO New intersection: 4th St & V St W St Aly - (38.568692, -121.507391)
+2021-12-19 02:53:49 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:53:50 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.56862139019525&lng=-121.50579571739037&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:53:50 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.56862139019525&lng=-121.50579571739037&username=raccoonn
+2021-12-19 02:53:50 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.50581700000001', 'distance': '0.03', 'bearing': '356', 'placename': 'Sacramento', 'street1Bearing': '198', 'street2Bearing': '108', 'adminName2': 'Sacramento', 'postalcode': '95818', 'countryCode': 'US', 'street1': '5th St', 'street2': 'V St', 'adminName1': 'California', 'lat': '38.56888'}}
+2021-12-19 02:53:50 INFO New intersection: 5th St & V St - (38.56888, -121.50581700000001)
+2021-12-19 02:53:50 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:53:50 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.56862139019525&lng=-121.5044224264537&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:53:50 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.56862139019525&lng=-121.5044224264537&username=raccoonn
+2021-12-19 02:53:50 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.504482', 'distance': '0.01', 'bearing': '205', 'placename': 'Sacramento', 'street1Bearing': '198', 'street2Bearing': '108', 'adminName2': 'Sacramento', 'postalcode': '95818', 'countryCode': 'US', 'street1': '6th St', 'street2': 'V St', 'adminName1': 'California', 'lat': '38.568524'}}
+2021-12-19 02:53:50 INFO New intersection: 6th St & V St - (38.568524, -121.504482)
+2021-12-19 02:53:50 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:53:51 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.56862139019525&lng=-121.50304913551702&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:53:51 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.56862139019525&lng=-121.50304913551702&username=raccoonn
+2021-12-19 02:53:51 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1730', 'adminCode1': 'CA', 'lng': '-121.504246', 'distance': '0.12', 'bearing': '295', 'placename': 'Sacramento', 'street1Bearing': '198', 'street2Bearing': '108', 'adminName2': 'Sacramento', 'postalcode': '95818', 'countryCode': 'US', 'street1': '6th St', 'street2': 'U St V St Aly', 'adminName1': 'California', 'lat': '38.569075'}}
+2021-12-19 02:53:51 INFO New intersection: 6th St & U St V St Aly - (38.569075, -121.504246)
+2021-12-19 02:53:51 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:53:51 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.56862139019525&lng=-121.50167584458035&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:53:51 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.56862139019525&lng=-121.50167584458035&username=raccoonn
+2021-12-19 02:53:51 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1730', 'adminCode1': 'CA', 'lng': '-121.501615', 'distance': '0.03', 'bearing': '169', 'placename': 'Sacramento', 'street1Bearing': '198', 'street2Bearing': '288', 'adminName2': 'Sacramento', 'postalcode': '95818', 'countryCode': 'US', 'street1': '8th St', 'street2': 'U St V St Aly', 'adminName1': 'California', 'lat': '38.568360999999996'}}
+2021-12-19 02:53:51 INFO New intersection: 8th St & U St V St Aly - (38.568360999999996, -121.501615)
+2021-12-19 02:53:51 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:53:51 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.56862139019525&lng=-121.50030255364366&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:53:51 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.56862139019525&lng=-121.50030255364366&username=raccoonn
+2021-12-19 02:53:51 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.500038', 'distance': '0.02', 'bearing': '107', 'placename': 'Sacramento', 'street1Bearing': '108', 'street2Bearing': '198', 'adminName2': 'Sacramento', 'postalcode': '95818', 'countryCode': 'US', 'street1': 'U St', 'street2': '9th St', 'adminName1': 'California', 'lat': '38.568556'}}
+2021-12-19 02:53:51 INFO New intersection: 9th St & U St - (38.568556, -121.500038)
+2021-12-19 02:53:51 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:53:52 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.56862139019525&lng=-121.498929262707&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:53:52 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.56862139019525&lng=-121.498929262707&username=raccoonn
+2021-12-19 02:53:52 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1730', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.498478', 'distance': '0.04', 'bearing': '71', 'placename': 'Sacramento', 'street1Bearing': '108', 'street2Bearing': '198', 'adminName2': 'Sacramento', 'postalcode': '95818', 'countryCode': 'US', 'street1': 'Tomato Aly', 'street2': '10th St', 'adminName1': 'California', 'lat': '38.568739'}}
+2021-12-19 02:53:52 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:53:52 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.570021702844315&lng=-121.50716900832705&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:53:52 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.570021702844315&lng=-121.50716900832705&username=raccoonn
+2021-12-19 02:53:52 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1730', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.50691499999999', 'distance': '0.03', 'bearing': '140', 'placename': 'Sacramento', 'street1Bearing': '108', 'street2Bearing': '198', 'adminName2': 'Sacramento', 'postalcode': '95818', 'countryCode': 'US', 'street1': 'U St V St Aly', 'street2': '4th St', 'adminName1': 'California', 'lat': '38.569784999999996'}}
+2021-12-19 02:53:52 INFO New intersection: 4th St & U St V St Aly - (38.569784999999996, -121.50691499999999)
+2021-12-19 02:53:52 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:53:53 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.570021702844315&lng=-121.50579571739037&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:53:53 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.570021702844315&lng=-121.50579571739037&username=raccoonn
+2021-12-19 02:53:53 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.505345', 'distance': '0.04', 'bearing': '98', 'placename': 'Sacramento', 'street1Bearing': '198', 'street2Bearing': '108', 'adminName2': 'Sacramento', 'postalcode': '95818', 'countryCode': 'US', 'street1': '5th St', 'street2': 'U St', 'adminName1': 'California', 'lat': '38.569972'}}
+2021-12-19 02:53:53 INFO New intersection: 5th St & U St - (38.569972, -121.505345)
+2021-12-19 02:53:53 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:53:53 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.570021702844315&lng=-121.5044224264537&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:53:53 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.570021702844315&lng=-121.5044224264537&username=raccoonn
+2021-12-19 02:53:53 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1730', 'adminCode1': 'CA', 'lng': '-121.504009', 'distance': '0.04', 'bearing': '57', 'placename': 'Sacramento', 'street1Bearing': '108', 'street2Bearing': '108', 'adminName2': 'Sacramento', 'postalcode': '95818', 'countryCode': 'US', 'street1': 'T and U Aly', 'street2': 'T St U St Aly', 'adminName1': 'California', 'lat': '38.570230999999985'}}
+2021-12-19 02:53:53 INFO New intersection: T St U St Aly & T and U Aly - (38.570230999999985, -121.504009)
+2021-12-19 02:53:53 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:53:53 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.570021702844315&lng=-121.50304913551702&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:53:53 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.570021702844315&lng=-121.50304913551702&username=raccoonn
+2021-12-19 02:53:53 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1730', 'adminCode1': 'CA', 'lng': '-121.50377300000001', 'distance': '0.06', 'bearing': '284', 'placename': 'Sacramento', 'street1Bearing': '198', 'street2Bearing': '108', 'adminName2': 'Sacramento', 'postalcode': '95814', 'countryCode': 'US', 'street1': '6th St', 'street2': 'T St U St Aly', 'adminName1': 'California', 'lat': '38.570167999999995'}}
+2021-12-19 02:53:53 INFO New intersection: 6th St & T St U St Aly - (38.570167999999995, -121.50377300000001)
+2021-12-19 02:53:53 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:53:54 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.570021702844315&lng=-121.50167584458035&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:53:54 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.570021702844315&lng=-121.50167584458035&username=raccoonn
+2021-12-19 02:53:54 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.502213', 'distance': '0.06', 'bearing': '308', 'placename': 'Sacramento', 'street1Bearing': '108', 'street2Bearing': '198', 'adminName2': 'Sacramento', 'postalcode': '95811', 'countryCode': 'US', 'street1': 'T St', 'street2': '7th St', 'adminName1': 'California', 'lat': '38.570358999999996'}}
+2021-12-19 02:53:54 INFO New intersection: 7th St & T St - (38.570358999999996, -121.502213)
+2021-12-19 02:53:54 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:53:54 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.570021702844315&lng=-121.50030255364366&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:53:54 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.570021702844315&lng=-121.50030255364366&username=raccoonn
+2021-12-19 02:53:54 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.5009', 'distance': '0.05', 'bearing': '268', 'placename': 'Sacramento', 'street1Bearing': '198', 'street2Bearing': '108', 'adminName2': 'Sacramento', 'postalcode': '95811', 'countryCode': 'US', 'street1': '8th St', 'street2': 'T St', 'adminName1': 'California', 'lat': '38.570009'}}
+2021-12-19 02:53:54 INFO New intersection: 8th St & T St - (38.570009, -121.5009)
+2021-12-19 02:53:54 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:53:54 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.570021702844315&lng=-121.498929262707&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:53:54 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.570021702844315&lng=-121.498929262707&username=raccoonn
+2021-12-19 02:53:54 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1730', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.499332', 'distance': '0.04', 'bearing': '298', 'placename': 'Sacramento', 'street1Bearing': '288', 'street2Bearing': '198', 'adminName2': 'Sacramento', 'postalcode': '95811', 'countryCode': 'US', 'street1': 'S St T St Aly', 'street2': '9th St', 'adminName1': 'California', 'lat': '38.570192'}}
+2021-12-19 02:53:54 INFO New intersection: 9th St & S St T St Aly - (38.570192, -121.499332)
+2021-12-19 02:53:54 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:53:55 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.57142201549339&lng=-121.50716900832705&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:53:55 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.57142201549339&lng=-121.50716900832705&username=raccoonn
+2021-12-19 02:53:55 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.50752', 'distance': '0.05', 'bearing': '321', 'placename': 'Sacramento', 'street1Bearing': '108', 'street2Bearing': '198', 'adminName2': 'Sacramento', 'postalcode': '95811', 'countryCode': 'US', 'street1': 'T St', 'street2': '3rd St', 'adminName1': 'California', 'lat': '38.571773'}}
+2021-12-19 02:53:55 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:53:55 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.57142201549339&lng=-121.50579571739037&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:53:55 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.57142201549339&lng=-121.50579571739037&username=raccoonn
+2021-12-19 02:53:55 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.506204', 'distance': '0.04', 'bearing': '269', 'placename': 'Sacramento', 'street1Bearing': '108', 'street2Bearing': '198', 'adminName2': 'Sacramento', 'postalcode': '95811', 'countryCode': 'US', 'street1': 'T St', 'street2': '4th St', 'adminName1': 'California', 'lat': '38.57142199999999'}}
+2021-12-19 02:53:55 INFO New intersection: 4th St & T St - (38.57142199999999, -121.506204)
+2021-12-19 02:53:55 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:53:55 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.57142201549339&lng=-121.5044224264537&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:53:55 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.57142201549339&lng=-121.5044224264537&username=raccoonn
+2021-12-19 02:53:55 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1730', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.50463500000001', 'distance': '0.03', 'bearing': '317', 'placename': 'Sacramento', 'street1Bearing': '288', 'street2Bearing': '198', 'adminName2': 'Sacramento', 'postalcode': '95811', 'countryCode': 'US', 'street1': 'S and T Aly', 'street2': '5th St', 'adminName1': 'California', 'lat': '38.571604'}}
+2021-12-19 02:53:55 INFO New intersection: 5th St & S and T Aly - (38.571604, -121.50463500000001)
+2021-12-19 02:53:55 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:53:56 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.57142201549339&lng=-121.50304913551702&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:53:56 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.57142201549339&lng=-121.50304913551702&username=raccoonn
+2021-12-19 02:53:56 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1730', 'adminCode1': 'CA', 'lng': '-121.503307', 'distance': '0.03', 'bearing': '229', 'placename': 'Sacramento', 'street1Bearing': '198', 'street2Bearing': '288', 'adminName2': 'Sacramento', 'postalcode': '95811', 'countryCode': 'US', 'street1': '6th St', 'street2': 'S St T St Aly', 'adminName1': 'California', 'lat': '38.57125'}}
+2021-12-19 02:53:56 INFO New intersection: 6th St & S St T St Aly - (38.57125, -121.503307)
+2021-12-19 02:53:56 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:53:56 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.57142201549339&lng=-121.50167584458035&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:53:56 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.57142201549339&lng=-121.50167584458035&username=raccoonn
+2021-12-19 02:53:56 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.50173699999999', 'distance': '0.01', 'bearing': '307', 'placename': 'Sacramento', 'street1Bearing': '108', 'street2Bearing': '198', 'adminName2': 'Sacramento', 'postalcode': '95811', 'countryCode': 'US', 'street1': 'S St', 'street2': '7th St', 'adminName1': 'California', 'lat': '38.571459'}}
+2021-12-19 02:53:56 INFO New intersection: 7th St & S St - (38.571459, -121.50173699999999)
+2021-12-19 02:53:56 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:53:57 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.57142201549339&lng=-121.50030255364366&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:53:57 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.57142201549339&lng=-121.50030255364366&username=raccoonn
+2021-12-19 02:53:57 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.500193', 'distance': '0.03', 'bearing': '21', 'placename': 'Sacramento', 'street1Bearing': '198', 'street2Bearing': '108', 'adminName2': 'Sacramento', 'postalcode': '95811', 'countryCode': 'US', 'street1': '8th St', 'street2': 'Rhodin Ln', 'adminName1': 'California', 'lat': '38.571641'}}
+2021-12-19 02:53:57 INFO New intersection: 8th St & Rhodin Ln - (38.571641, -121.500193)
+2021-12-19 02:53:57 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:53:57 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.57142201549339&lng=-121.498929262707&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:53:57 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.57142201549339&lng=-121.498929262707&username=raccoonn
+2021-12-19 02:53:57 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1730', 'adminCode1': 'CA', 'lng': '-121.498861', 'distance': '0.02', 'bearing': '158', 'placename': 'Sacramento', 'street1Bearing': '198', 'street2Bearing': '288', 'adminName2': 'Sacramento', 'postalcode': '95811', 'countryCode': 'US', 'street1': '9th St', 'street2': 'R St S St Aly', 'adminName1': 'California', 'lat': '38.571286'}}
+2021-12-19 02:53:57 INFO New intersection: 9th St & R St S St Aly - (38.571286, -121.498861)
+2021-12-19 02:53:57 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:53:57 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.572822328142465&lng=-121.50579571739037&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:53:57 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.572822328142465&lng=-121.50579571739037&username=raccoonn
+2021-12-19 02:53:57 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.505726', 'distance': '0.03', 'bearing': '169', 'placename': 'Sacramento', 'street1Bearing': '198', 'street2Bearing': '108', 'adminName2': 'Sacramento', 'postalcode': '95811', 'countryCode': 'US', 'street1': '4th St', 'street2': 'S St', 'adminName1': 'California', 'lat': '38.572522'}}
+2021-12-19 02:53:57 INFO New intersection: 4th St & S St - (38.572522, -121.505726)
+2021-12-19 02:53:57 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:53:58 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.572822328142465&lng=-121.5044224264537&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:53:58 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.572822328142465&lng=-121.5044224264537&username=raccoonn
+2021-12-19 02:53:58 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1730', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.504161', 'distance': '0.03', 'bearing': '121', 'placename': 'Sacramento', 'street1Bearing': '288', 'street2Bearing': '198', 'adminName2': 'Sacramento', 'postalcode': '95811', 'countryCode': 'US', 'street1': 'R St S St Aly', 'street2': '5th St', 'adminName1': 'California', 'lat': '38.572697999999995'}}
+2021-12-19 02:53:58 INFO New intersection: 5th St & R St S St Aly - (38.572697999999995, -121.504161)
+2021-12-19 02:53:58 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:53:58 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.572822328142465&lng=-121.50304913551702&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:53:58 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.572822328142465&lng=-121.50304913551702&username=raccoonn
+2021-12-19 02:53:58 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.502598', 'distance': '0.04', 'bearing': '78', 'placename': 'Sacramento', 'street1Bearing': '108', 'street2Bearing': '198', 'adminName2': 'Sacramento', 'postalcode': '95811', 'countryCode': 'US', 'street1': 'R St', 'street2': '6th St', 'adminName1': 'California', 'lat': '38.572893'}}
+2021-12-19 02:53:58 INFO New intersection: 6th St & R St - (38.572893, -121.502598)
+2021-12-19 02:53:58 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:53:59 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.572822328142465&lng=-121.50167584458035&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:53:59 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.572822328142465&lng=-121.50167584458035&username=raccoonn
+2021-12-19 02:53:59 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.501745', 'distance': '0.02', 'bearing': '198', 'placename': 'Sacramento', 'street1Bearing': '199', 'street2Bearing': '108', 'adminName2': 'Sacramento', 'postalcode': '95814', 'countryCode': 'US', 'street1': 'E Socap Walk', 'street2': 'R St', 'adminName1': 'California', 'lat': '38.572665'}}
+2021-12-19 02:53:59 INFO New intersection: E Socap Walk & R St - (38.572665, -121.501745)
+2021-12-19 02:53:59 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:53:59 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.572822328142465&lng=-121.50030255364366&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:53:59 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.572822328142465&lng=-121.50030255364366&username=raccoonn
+2021-12-19 02:53:59 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1730', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.49972', 'distance': '0.05', 'bearing': '101', 'placename': 'Sacramento', 'street1Bearing': '288', 'street2Bearing': '198', 'adminName2': 'Sacramento', 'postalcode': '95811', 'countryCode': 'US', 'street1': 'Q St R St Aly', 'street2': '8th St', 'adminName1': 'California', 'lat': '38.572731999999995'}}
+2021-12-19 02:53:59 INFO New intersection: 8th St & Q St R St Aly - (38.572731999999995, -121.49972)
+2021-12-19 02:53:59 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:53:59 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.572822328142465&lng=-121.498929262707&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:53:59 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.572822328142465&lng=-121.498929262707&username=raccoonn
+2021-12-19 02:53:59 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1730', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.49839', 'distance': '0.07', 'bearing': '136', 'placename': 'Sacramento', 'street1Bearing': '288', 'street2Bearing': '198', 'adminName2': 'Sacramento', 'postalcode': '95814', 'countryCode': 'US', 'street1': 'Q St R St Aly', 'street2': '9th St', 'adminName1': 'California', 'lat': '38.572378'}}
+2021-12-19 02:53:59 INFO New intersection: 9th St & Q St R St Aly - (38.572378, -121.49839)
+2021-12-19 02:53:59 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:54:00 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.572822328142465&lng=-121.49755597177031&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:54:00 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.572822328142465&lng=-121.49755597177031&username=raccoonn
+2021-12-19 02:54:00 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.498153', 'distance': '0.05', 'bearing': '282', 'placename': 'Sacramento', 'street1Bearing': '198', 'street2Bearing': '108', 'adminName2': 'Sacramento', 'postalcode': '95814', 'countryCode': 'US', 'street1': '9th St', 'street2': 'Q St', 'adminName1': 'California', 'lat': '38.572925'}}
+2021-12-19 02:54:00 INFO New intersection: 9th St & Q St - (38.572925, -121.498153)
+2021-12-19 02:54:00 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:54:00 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.57422264079154&lng=-121.50579571739037&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:54:00 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.57422264079154&lng=-121.50579571739037&username=raccoonn
+2021-12-19 02:54:00 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1730', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.506327', 'distance': '0.06', 'bearing': '304', 'placename': 'Sacramento', 'street1Bearing': '288', 'street2Bearing': '199', 'adminName2': 'Sacramento', 'postalcode': '', 'countryCode': 'US', 'street1': 'Q St R St Aly', 'street2': '3rd St', 'adminName1': 'California', 'lat': '38.574509'}}
+2021-12-19 02:54:00 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:54:00 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.57422264079154&lng=-121.5044224264537&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:54:00 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.57422264079154&lng=-121.5044224264537&username=raccoonn
+2021-12-19 02:54:00 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1730', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.50501299999999', 'distance': '0.05', 'bearing': '262', 'placename': 'Sacramento', 'street1Bearing': '288', 'street2Bearing': '198', 'adminName2': 'Sacramento', 'postalcode': '95814', 'countryCode': 'US', 'street1': 'Q St R St Aly', 'street2': '4th St', 'adminName1': 'California', 'lat': '38.574159'}}
+2021-12-19 02:54:00 INFO New intersection: 4th St & Q St R St Aly - (38.574159, -121.50501299999999)
+2021-12-19 02:54:00 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:54:01 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.57422264079154&lng=-121.50304913551702&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:54:01 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.57422264079154&lng=-121.50304913551702&username=raccoonn
+2021-12-19 02:54:01 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.503452', 'distance': '0.04', 'bearing': '289', 'placename': 'Sacramento', 'street1Bearing': '108', 'street2Bearing': '198', 'adminName2': 'Sacramento', 'postalcode': '95811', 'countryCode': 'US', 'street1': 'Q St', 'street2': '5th St', 'adminName1': 'California', 'lat': '38.574335999999995'}}
+2021-12-19 02:54:01 INFO New intersection: 5th St & Q St - (38.574335999999995, -121.503452)
+2021-12-19 02:54:01 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:54:01 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.57422264079154&lng=-121.50167584458035&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:54:01 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.57422264079154&lng=-121.50167584458035&username=raccoonn
+2021-12-19 02:54:01 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.50212800000001', 'distance': '0.05', 'bearing': '235', 'placename': 'Sacramento', 'street1Bearing': '198', 'street2Bearing': '108', 'adminName2': 'Sacramento', 'postalcode': '95814', 'countryCode': 'US', 'street1': '6th St', 'street2': 'Q St', 'adminName1': 'California', 'lat': '38.573983999999996'}}
+2021-12-19 02:54:01 INFO New intersection: 6th St & Q St - (38.573983999999996, -121.50212800000001)
+2021-12-19 02:54:01 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:54:01 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.57422264079154&lng=-121.50030255364366&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:54:01 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.57422264079154&lng=-121.50030255364366&username=raccoonn
+2021-12-19 02:54:01 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.500323', 'distance': '0.06', 'bearing': '358', 'placename': 'Sacramento', 'street1Bearing': '198', 'street2Bearing': '108', 'adminName2': 'Sacramento', 'postalcode': '95814', 'countryCode': 'US', 'street1': '7th St', 'street2': 'P St', 'adminName1': 'California', 'lat': '38.574732999999995'}}
+2021-12-19 02:54:01 INFO New intersection: 7th St & P St - (38.574732999999995, -121.500323)
+2021-12-19 02:54:01 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:54:02 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.57422264079154&lng=-121.498929262707&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:54:02 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.57422264079154&lng=-121.498929262707&username=raccoonn
+2021-12-19 02:54:02 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.499005', 'distance': '0.02', 'bearing': '339', 'placename': 'Sacramento', 'street1Bearing': '198', 'street2Bearing': '108', 'adminName2': 'Sacramento', 'postalcode': '95814', 'countryCode': 'US', 'street1': '8th St', 'street2': 'P St', 'adminName1': 'California', 'lat': '38.574382'}}
+2021-12-19 02:54:02 INFO New intersection: 8th St & P St - (38.574382, -121.499005)
+2021-12-19 02:54:02 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:54:02 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.57422264079154&lng=-121.49755597177031&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:54:02 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.57422264079154&lng=-121.49755597177031&username=raccoonn
+2021-12-19 02:54:02 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.497677', 'distance': '0.02', 'bearing': '206', 'placename': 'Sacramento', 'street1Bearing': '198', 'street2Bearing': '108', 'adminName2': 'Sacramento', 'postalcode': '95814', 'countryCode': 'US', 'street1': '9th St', 'street2': 'P St', 'adminName1': 'California', 'lat': '38.574028999999996'}}
+2021-12-19 02:54:02 INFO New intersection: 9th St & P St - (38.574028999999996, -121.497677)
+2021-12-19 02:54:02 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:54:03 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.57562295344061&lng=-121.50579571739037&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:54:03 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.57562295344061&lng=-121.50579571739037&username=raccoonn
+2021-12-19 02:54:03 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.505622', 'distance': '0.06', 'bearing': '14', 'placename': 'Sacramento', 'street1Bearing': '198', 'street2Bearing': '108', 'adminName2': 'Sacramento', 'postalcode': '95814', 'countryCode': 'US', 'street1': '3rd St', 'street2': 'P St', 'adminName1': 'California', 'lat': '38.576145'}}
+2021-12-19 02:54:03 INFO New intersection: 3rd St & P St - (38.576145, -121.505622)
+2021-12-19 02:54:03 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:54:03 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.57562295344061&lng=-121.5044224264537&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:54:03 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.57562295344061&lng=-121.5044224264537&username=raccoonn
+2021-12-19 02:54:03 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.50429', 'distance': '0.02', 'bearing': '31', 'placename': 'Sacramento', 'street1Bearing': '108', 'street2Bearing': '198', 'adminName2': 'Sacramento', 'postalcode': '95814', 'countryCode': 'US', 'street1': 'P St', 'street2': '4th St', 'adminName1': 'California', 'lat': '38.575790999999995'}}
+2021-12-19 02:54:03 INFO New intersection: 4th St & P St - (38.575790999999995, -121.50429)
+2021-12-19 02:54:03 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:54:03 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.57562295344061&lng=-121.50304913551702&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:54:03 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.57562295344061&lng=-121.50304913551702&username=raccoonn
+2021-12-19 02:54:03 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.50297300000001', 'distance': '0.02', 'bearing': '161', 'placename': 'Sacramento', 'street1Bearing': '198', 'street2Bearing': '108', 'adminName2': 'Sacramento', 'postalcode': '95814', 'countryCode': 'US', 'street1': '5th St', 'street2': 'P St', 'adminName1': 'California', 'lat': '38.57544'}}
+2021-12-19 02:54:03 INFO New intersection: 5th St & P St - (38.57544, -121.50297300000001)
+2021-12-19 02:54:03 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:54:04 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.57562295344061&lng=-121.50167584458035&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:54:04 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.57562295344061&lng=-121.50167584458035&username=raccoonn
+2021-12-19 02:54:04 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.501652', 'distance': '0.06', 'bearing': '178', 'placename': 'Sacramento', 'street1Bearing': '108', 'street2Bearing': '198', 'adminName2': 'Sacramento', 'postalcode': '95814', 'countryCode': 'US', 'street1': 'P St', 'street2': '6th St', 'adminName1': 'California', 'lat': '38.575088'}}
+2021-12-19 02:54:04 INFO New intersection: 6th St & P St - (38.575088, -121.501652)
+2021-12-19 02:54:04 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:54:04 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.57562295344061&lng=-121.50030255364366&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:54:04 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.57562295344061&lng=-121.50030255364366&username=raccoonn
+2021-12-19 02:54:04 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1730', 'adminCode1': 'CA', 'lng': '-121.500086', 'distance': '0.04', 'bearing': '153', 'placename': 'Sacramento', 'street1Bearing': '198', 'street2Bearing': '108', 'adminName2': 'Sacramento', 'postalcode': '95814', 'countryCode': 'US', 'street1': '7th St', 'street2': 'O St P St Aly', 'adminName1': 'California', 'lat': '38.575281'}}
+2021-12-19 02:54:04 INFO New intersection: 7th St & O St P St Aly - (38.575281, -121.500086)
+2021-12-19 02:54:04 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:54:04 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.57562295344061&lng=-121.498929262707&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:54:04 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.57562295344061&lng=-121.498929262707&username=raccoonn
+2021-12-19 02:54:04 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.498531', 'distance': '0.04', 'bearing': '115', 'placename': 'Sacramento', 'street1Bearing': '108', 'street2Bearing': '200', 'adminName2': 'Sacramento', 'postalcode': '95814', 'countryCode': 'US', 'street1': 'O St', 'street2': '8th St', 'adminName1': 'California', 'lat': '38.575475'}}
+2021-12-19 02:54:04 INFO New intersection: 8th St & O St - (38.575475, -121.498531)
+2021-12-19 02:54:04 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:54:05 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.57562295344061&lng=-121.49755597177031&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:54:05 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.57562295344061&lng=-121.49755597177031&username=raccoonn
+2021-12-19 02:54:05 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1730', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.49696', 'distance': '0.05', 'bearing': '81', 'placename': 'Sacramento', 'street1Bearing': '108', 'street2Bearing': '198', 'adminName2': 'Sacramento', 'postalcode': '95814', 'countryCode': 'US', 'street1': 'N St O St Aly', 'street2': '9th St', 'adminName1': 'California', 'lat': '38.575689'}}
+2021-12-19 02:54:05 INFO New intersection: 9th St & N St O St Aly - (38.575689, -121.49696)
+2021-12-19 02:54:05 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:54:05 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.57702326608968&lng=-121.5044224264537&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:54:05 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.57702326608968&lng=-121.5044224264537&username=raccoonn
+2021-12-19 02:54:05 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.503817', 'distance': '0.05', 'bearing': '106', 'placename': 'Sacramento', 'street1Bearing': '198', 'street2Bearing': '108', 'adminName2': 'Sacramento', 'postalcode': '95814', 'countryCode': 'US', 'street1': '4th St', 'street2': 'O St', 'adminName1': 'California', 'lat': '38.576882'}}
+2021-12-19 02:54:05 INFO New intersection: 4th St & O St - (38.576882, -121.503817)
+2021-12-19 02:54:05 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:54:06 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.57702326608968&lng=-121.50304913551702&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:54:06 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.57702326608968&lng=-121.50304913551702&username=raccoonn
+2021-12-19 02:54:06 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.503817', 'distance': '0.07', 'bearing': '256', 'placename': 'Sacramento', 'street1Bearing': '108', 'street2Bearing': '198', 'adminName2': 'Sacramento', 'postalcode': '95814', 'countryCode': 'US', 'street1': 'O St', 'street2': '4th St', 'adminName1': 'California', 'lat': '38.576882'}}
+2021-12-19 02:54:06 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:54:06 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.57702326608968&lng=-121.50167584458035&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:54:06 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.57702326608968&lng=-121.50167584458035&username=raccoonn
+2021-12-19 02:54:06 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.501331', 'distance': '0.06', 'bearing': '32', 'placename': 'Sacramento', 'street1Bearing': '108', 'street2Bearing': '25', 'adminName2': 'Sacramento', 'postalcode': '', 'countryCode': 'US', 'street1': 'N St', 'street2': 'Hudson Aly', 'adminName1': 'California', 'lat': '38.577450999999996'}}
+2021-12-19 02:54:06 INFO New intersection: Hudson Aly & N St - (38.577450999999996, -121.501331)
+2021-12-19 02:54:06 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:54:06 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.57702326608968&lng=-121.50030255364366&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:54:06 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.57702326608968&lng=-121.50030255364366&username=raccoonn
+2021-12-19 02:54:06 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.499374', 'distance': '0.08', 'bearing': '97', 'placename': 'Sacramento', 'street1Bearing': '108', 'street2Bearing': '198', 'adminName2': 'Sacramento', 'postalcode': '95814', 'countryCode': 'US', 'street1': 'N St', 'street2': '7th St', 'adminName1': 'California', 'lat': '38.57692999999999'}}
+2021-12-19 02:54:06 INFO New intersection: 7th St & N St - (38.57692999999999, -121.499374)
+2021-12-19 02:54:06 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:54:07 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.57702326608968&lng=-121.498929262707&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:54:07 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.57702326608968&lng=-121.498929262707&username=raccoonn
+2021-12-19 02:54:07 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.499374', 'distance': '0.04', 'bearing': '254', 'placename': 'Sacramento', 'street1Bearing': '198', 'street2Bearing': '108', 'adminName2': 'Sacramento', 'postalcode': '95814', 'countryCode': 'US', 'street1': '7th St', 'street2': 'N St', 'adminName1': 'California', 'lat': '38.57692999999999'}}
+2021-12-19 02:54:07 DEBUG Starting new HTTP connection (1): api.geonames.org:80
+2021-12-19 02:54:07 DEBUG http://api.geonames.org:80 "GET /findNearestIntersectionJSON?lat=38.57702326608968&lng=-121.49755597177031&username=raccoonn HTTP/1.1" 200 None
+2021-12-19 02:54:07 INFO API call made to: http://api.geonames.org/findNearestIntersectionJSON?lat=38.57702326608968&lng=-121.49755597177031&username=raccoonn
+2021-12-19 02:54:07 INFO Response: {'credits': '1.0', 'intersection': {'mtfcc1': 'S1400', 'mtfcc2': 'S1400', 'adminCode1': 'CA', 'lng': '-121.498053', 'distance': '0.07', 'bearing': '221', 'placename': 'Sacramento', 'street1Bearing': '198', 'street2Bearing': '108', 'adminName2': 'Sacramento', 'postalcode': '95814', 'countryCode': 'US', 'street1': '8th St', 'street2': 'N St', 'adminName1': 'California', 'lat': '38.576578'}}
+2021-12-19 02:54:07 INFO New intersection: 8th St & N St - (38.576578, -121.498053)
+2021-12-19 02:54:07 INFO Entire discretized boundary has been traversed
+2021-12-19 02:54:07 INFO Function completed, exit code: 0
