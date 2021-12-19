@@ -7,21 +7,6 @@ import logging
 from shapely.geometry import Polygon, Point
 
 
-"""
-Progress --
-
-    CURRENTLY:
-        - DOES NOT properly discretize between 4 coordinate boundary
-
-            - Need to add linear interpolation of boundaries
-              Allow for an arbitraty 4 sided boundary
-
-"""
-
-
-
-
-
 
 
 def get_coords(bounds, sleeps=0, dx=50, dy=50, username='raccoonn'):
@@ -85,7 +70,7 @@ def get_coords(bounds, sleeps=0, dx=50, dy=50, username='raccoonn'):
                 except:
                     logging.info('API Call limit reached, writing current dictionary')
                     fname = datetime.now().strftime('%H%M%S') + '_xs_gps_store.json'
-                    with open(fname, 'w') as f:
+                    with open('xs_gps/' + fname, 'w') as f:
                         json.dump(store, f, indent=4, sort_keys=True)
 
                     ## If sleep limit reached return Exit Code 1
@@ -96,8 +81,8 @@ def get_coords(bounds, sleeps=0, dx=50, dy=50, username='raccoonn'):
 
                     else:
                         s_it += 1
-                        logging.info('API call limit reached, sleeping for one hour...')
-                        logging.info('%d sleeps remaining' % (sleeps-s_it))
+                        logging.warning('API call limit reached, sleeping for one hour...')
+                        logging.warning('%d sleeps remaining' % (sleeps-s_it))
                         time.sleep(3600)
 
 
@@ -115,13 +100,13 @@ def get_coords(bounds, sleeps=0, dx=50, dy=50, username='raccoonn'):
 if __name__ == '__main__':
 
     ## Load GPS boundaries
-    f_bounds = 'bounds.txt'
+    f_bounds = 'bounds_full_grid.txt'
     with open(f_bounds) as f:
         bounds = [[float(n) for n in line.split(', ')] for line in f.read().splitlines()]
 
 
-    ## Get intersections within boundaries, maximum 5 sleeps
-    sleeps, dx, dy = 5, 20, 20
+    ## Get intersections within boundaries
+    sleeps, dx, dy = 10, 100, 100
     store, e_code = get_coords(bounds, sleeps, dx, dy)
 
     logging.info('Function completed, exit code: %d' % e_code)
@@ -130,7 +115,7 @@ if __name__ == '__main__':
     ## Write final dictionary
     ## Note:  Check log for boudnary completeness
     fname = datetime.now().strftime('%H%M%S') + '_final_xs_gps_store.json'
-    with open(fname, 'w') as f:
+    with open('xs_gps/' + fname, 'w') as f:
         json.dump(store, f, indent=4, sort_keys=True)
 
 

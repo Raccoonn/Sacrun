@@ -4,6 +4,23 @@ import math
 import json
 
 
+"""
+Method for connecting intersections:
+
+    - Select a node
+    - Check for the closest node
+    - If street is shared take node
+        - If street is also shared with a previous found node
+          check distance between the nodes is > distance from current node
+
+    - Repeat until maximum (4) nodes is reached or distance is outside "average" radius
+
+"""
+
+
+
+
+
 
 def dist(p1, p2):
     """
@@ -34,8 +51,12 @@ with open(fname) as f:
 
 
 
+## Conversion dictionaries for easier xs <-> node number lookup
+n_to_xs = {n : xs for n, xs in enumerate(store)}
 
-## Create fully connected graph from adjacency matrix
+
+
+## Create fully connected adjacency matrix
 adj = np.zeros((len(store), len(store)))
 
 for i, ix1 in enumerate(store):
@@ -45,33 +66,12 @@ for i, ix1 in enumerate(store):
         adj[i,j] = dist(p1, p2)
 
 
-G = nx.from_numpy_matrix(adj)
-
-attrs = {0 : store}
-nx.set_node_attributes(G, attrs)
-
-m = nx.minimum_edge_cut(G)
-
-ixs = list(store)
 
 
-
-
-"""
-Method for connecting intersections:
-
-    - Select a node
-    - Check for the closest node
-    - If street is shared take node
-        - If street is also shared with a previous found node
-          check distance between the nodes is > distance from current node
-
-    - Repeat until maximum (4) nodes is reached or distance is outside "average" radius
-
-"""
-
-
-
+## Add each node in store with intersection/gps stored as attributes
+G = nx.Graph()
+for i, point in enumerate(store):
+    G.add_node(i, xs=point, gps=store[point])
 
 
 
