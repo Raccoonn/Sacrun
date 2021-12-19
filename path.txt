@@ -1,0 +1,277 @@
+10th St & N St  to  10th St & O St
+10th St & O St  to  10th St & O St P St Aly
+10th St & O St P St Aly  to  10th St & P St
+10th St & P St  to  10th St & Q St
+10th St & Q St  to  9th St & Q St
+9th St & Q St  to  9th St & Q St R St Aly
+9th St & Q St R St Aly  to  9th St & R St
+9th St & R St  to  8th St & R St
+8th St & R St  to  9th St & R St
+9th St & R St  to  10th St & R St
+10th St & R St  to  9th St & R St
+9th St & R St  to  9th St & R St S St Aly
+9th St & R St S St Aly  to  9th St & S St
+9th St & S St  to  9th St & S St T St Aly
+9th St & S St T St Aly  to  9th St & Tomato Aly
+9th St & Tomato Aly  to  9th St & U St
+9th St & U St  to  9th St & U St V St Aly
+9th St & U St V St Aly  to  9th St & V St
+9th St & V St  to  9th St & V St W St Aly
+9th St & V St W St Aly  to  9th St & W St
+9th St & W St  to  8th St & W St
+8th St & W St  to  9th St & W St
+9th St & W St  to  10th St & W St
+10th St & W St  to  10th St & V St W St Aly
+10th St & V St W St Aly  to  9th St & V St W St Aly
+9th St & V St W St Aly  to  8th St & V St W St Aly
+8th St & V St W St Aly  to  8th St & U St V St Aly
+8th St & U St V St Aly  to  8th St & V St W St Aly
+8th St & V St W St Aly  to  8th St & W St
+8th St & W St  to  8th St & V St
+8th St & V St  to  9th St & V St
+9th St & V St  to  10th St & V St
+10th St & V St  to  10th St & W St
+10th St & W St  to  10th St & V St W St Aly
+10th St & V St W St Aly  to  10th St & U St V St Aly
+10th St & U St V St Aly  to  9th St & U St V St Aly
+9th St & U St V St Aly  to  8th St & U St V St Aly
+8th St & U St V St Aly  to  8th St & T and U Aly
+8th St & T and U Aly  to  8th St & U St V St Aly
+8th St & U St V St Aly  to  8th St & V St
+8th St & V St  to  8th St & U St
+8th St & U St  to  8th St & T and U Aly
+8th St & T and U Aly  to  8th St & U St
+8th St & U St  to  9th St & U St
+9th St & U St  to  10th St & U St
+10th St & U St  to  10th St & V St
+10th St & V St  to  10th St & U St V St Aly
+10th St & U St V St Aly  to  10th St & Tomato Aly
+10th St & Tomato Aly  to  9th St & Tomato Aly
+9th St & Tomato Aly  to  9th St & T St
+9th St & T St  to  9th St & S St T St Aly
+9th St & S St T St Aly  to  8th St & S St T St Aly
+8th St & S St T St Aly  to  8th St & T and U Aly
+8th St & T and U Aly  to  8th St & T St
+8th St & T St  to  9th St & T St
+9th St & T St  to  10th St & T St
+10th St & T St  to  10th St & U St
+10th St & U St  to  10th St & Tomato Aly
+10th St & Tomato Aly  to  10th St & S St T St Aly
+10th St & S St T St Aly  to  9th St & S St T St Aly
+9th St & S St T St Aly  to  8th St & S St T St Aly
+8th St & S St T St Aly  to  8th St & T St
+8th St & T St  to  7th St & T St
+7th St & T St  to  6th St & T St
+6th St & T St  to  6th St & U St
+6th St & U St  to  6th St & V St
+6th St & V St  to  5th St & V St
+5th St & V St  to  Davini Ln & V St
+Davini Ln & V St  to  Davini Ln & V St W St Aly
+Davini Ln & V St W St Aly  to  Davini Ln & V St
+Davini Ln & V St  to  4th St & V St
+4th St & V St  to  Davini Ln & V St
+Davini Ln & V St  to  5th St & V St
+5th St & V St  to  6th St & V St
+6th St & V St  to  6th St & V St W St Aly
+6th St & V St W St Aly  to  6th St & W St
+6th St & W St  to  5th St & W St
+5th St & W St  to  4th St & W St
+4th St & W St  to  5th St & W St
+5th St & W St  to  5th St & V St W St Aly
+5th St & V St W St Aly  to  6th St & V St W St Aly
+6th St & V St W St Aly  to  6th St & U St V St Aly
+6th St & U St V St Aly  to  6th St & U St
+6th St & U St  to  6th St & U St V St Aly
+6th St & U St V St Aly  to  5th St & U St V St Aly
+5th St & U St V St Aly  to  5th St & V St
+5th St & V St  to  5th St & V St W St Aly
+5th St & V St W St Aly  to  Davini Ln & V St W St Aly
+Davini Ln & V St W St Aly  to  4th St & V St W St Aly
+4th St & V St W St Aly  to  V St W St Aly & W St
+V St W St Aly & W St  to  4th St & W St
+4th St & W St  to  4th St & V St W St Aly
+4th St & V St W St Aly  to  4th St & V St
+4th St & V St  to  4th St & U St V St Aly
+4th St & U St V St Aly  to  5th St & U St V St Aly
+5th St & U St V St Aly  to  5th St & U St
+5th St & U St  to  6th St & U St
+6th St & U St  to  6th St & T St U St Aly
+6th St & T St U St Aly  to  T St U St Aly & T and U Aly
+T St U St Aly & T and U Aly  to  5th St & T and U Aly
+5th St & T and U Aly  to  T St U St Aly & T and U Aly
+T St U St Aly & T and U Aly  to  6th St & T St U St Aly
+6th St & T St U St Aly  to  6th St & T St
+6th St & T St  to  7th St & T St
+7th St & T St  to  7th St & S St T St Aly
+7th St & S St T St Aly  to  8th St & S St T St Aly
+8th St & S St T St Aly  to  8th St & S St
+8th St & S St  to  9th St & S St
+9th St & S St  to  10th St & S St
+10th St & S St  to  10th St & T St
+10th St & T St  to  10th St & S St T St Aly
+10th St & S St T St Aly  to  10th St & R St S St Aly
+10th St & R St S St Aly  to  9th St & R St S St Aly
+9th St & R St S St Aly  to  8th St & R St S St Aly
+8th St & R St S St Aly  to  8th St & R St S St Aly
+8th St & R St S St Aly  to  8th St & S St
+8th St & S St  to  7th St & S St
+7th St & S St  to  7th St & S St T St Aly
+7th St & S St T St Aly  to  S St T St Aly & S and T Aly
+S St T St Aly & S and T Aly  to  6th St & S St T St Aly
+6th St & S St T St Aly  to  S St T St Aly & S and T Aly
+S St T St Aly & S and T Aly  to  5th St & S and T Aly
+5th St & S and T Aly  to  5th St & T St
+5th St & T St  to  5th St & T and U Aly
+5th St & T and U Aly  to  5th St & U St
+5th St & U St  to  4th St & U St
+4th St & U St  to  4th St & T St
+4th St & T St  to  4th St & U St
+4th St & U St  to  4th St & U St V St Aly
+4th St & U St V St Aly  to  3rd St & U St V St Aly
+3rd St & U St V St Aly  to  4th St & U St V St Aly
+4th St & U St V St Aly  to  4th St & T St U St Aly
+4th St & T St U St Aly  to  4th St & T St
+4th St & T St  to  5th St & T St
+5th St & T St  to  6th St & T St
+6th St & T St  to  6th St & S St T St Aly
+6th St & S St T St Aly  to  6th St & S St T St Aly
+6th St & S St T St Aly  to  6th St & S St
+6th St & S St  to  7th St & S St
+7th St & S St  to  7th St & R St S St Aly
+7th St & R St S St Aly  to  8th St & R St S St Aly
+8th St & R St S St Aly  to  8th St & Rhodin Ln
+8th St & Rhodin Ln  to  8th St & R St
+8th St & R St  to  8th St & Rhodin Ln
+8th St & Rhodin Ln  to  7th St & Rhodin Ln
+7th St & Rhodin Ln  to  7th St & Rhodin Ln
+7th St & Rhodin Ln  to  7th St & R St S St Aly
+7th St & R St S St Aly  to  7th St & Rhodin Ln
+7th St & Rhodin Ln  to  7th St & R St
+7th St & R St  to  8th St & R St
+8th St & R St  to  8th St & Q St R St Aly
+8th St & Q St R St Aly  to  8th St & Q St
+8th St & Q St  to  9th St & Q St
+9th St & Q St  to  9th St & P St
+9th St & P St  to  8th St & P St
+8th St & P St  to  8th St & Q St
+8th St & Q St  to  7th St & Q St
+7th St & Q St  to  7th St & Q St R St Aly
+7th St & Q St R St Aly  to  7th St & R St
+7th St & R St  to  E Socap Walk & R St
+E Socap Walk & R St  to  R St & W Socap Walk
+R St & W Socap Walk  to  6th St & R St
+6th St & R St  to  6th St & R St S St Aly
+6th St & R St S St Aly  to  5th St & R St S St Aly
+5th St & R St S St Aly  to  6th St & R St S St Aly
+6th St & R St S St Aly  to  6th St & S St
+6th St & S St  to  5th St & S St
+5th St & S St  to  5th St & S and T Aly
+5th St & S and T Aly  to  4th St & S and T Aly
+4th St & S and T Aly  to  4th St & T St
+4th St & T St  to  3rd St & T St
+3rd St & T St  to  3rd St & S and T Aly
+3rd St & S and T Aly  to  3rd St & R St S St Aly
+3rd St & R St S St Aly  to  3rd St & S and T Aly
+3rd St & S and T Aly  to  4th St & S and T Aly
+4th St & S and T Aly  to  4th St & S St
+4th St & S St  to  5th St & S St
+5th St & S St  to  5th St & R St S St Aly
+5th St & R St S St Aly  to  4th St & R St S St Aly
+4th St & R St S St Aly  to  5th St & R St S St Aly
+5th St & R St S St Aly  to  5th St & R St
+5th St & R St  to  6th St & R St
+6th St & R St  to  6th St & Q St R St Aly
+6th St & Q St R St Aly  to  7th St & Q St R St Aly
+7th St & Q St R St Aly  to  8th St & Q St R St Aly
+8th St & Q St R St Aly  to  9th St & Q St R St Aly
+9th St & Q St R St Aly  to  10th St & Q St R St Aly
+10th St & Q St R St Aly  to  10th St & R St S St Aly
+10th St & R St S St Aly  to  10th St & S St
+10th St & S St  to  10th St & R St
+10th St & R St  to  10th St & Q St R St Aly
+10th St & Q St R St Aly  to  10th St & Q St
+10th St & Q St  to  10th St & P St
+10th St & P St  to  9th St & P St
+9th St & P St  to  9th St & O St
+9th St & O St  to  9th St & N St O St Aly
+9th St & N St O St Aly  to  9th St & N St
+9th St & N St  to  8th St & N St
+8th St & N St  to  9th St & N St
+9th St & N St  to  10th St & N St
+10th St & N St  to  10th St & O St
+10th St & O St  to  9th St & O St
+9th St & O St  to  8th St & O St
+8th St & O St  to  8th St & O St P St Aly
+8th St & O St P St Aly  to  8th St & P St
+8th St & P St  to  7th St & P St
+7th St & P St  to  7th St & O St P St Aly
+7th St & O St P St Aly  to  8th St & O St P St Aly
+8th St & O St P St Aly  to  8th St & N St O St Aly
+8th St & N St O St Aly  to  8th St & O St
+8th St & O St  to  7th St & O St
+7th St & O St  to  7th St & O St P St Aly
+7th St & O St P St Aly  to  7th St & P St
+7th St & P St  to  6th St & P St
+6th St & P St  to  7th St & P St
+7th St & P St  to  7th St & Q St
+7th St & Q St  to  6th St & Q St
+6th St & Q St  to  6th St & Q St R St Aly
+6th St & Q St R St Aly  to  5th St & Q St R St Aly
+5th St & Q St R St Aly  to  5th St & R St
+5th St & R St  to  4th St & R St
+4th St & R St  to  4th St & R St S St Aly
+4th St & R St S St Aly  to  3rd St & R St S St Aly
+3rd St & R St S St Aly  to  4th St & R St S St Aly
+4th St & R St S St Aly  to  4th St & S St
+4th St & S St  to  3rd St & S St
+3rd St & S St  to  3rd St & T St
+3rd St & T St  to  3rd St & S St
+3rd St & S St  to  3rd St & R St S St Aly
+3rd St & R St S St Aly  to  3rd St & R St
+3rd St & R St  to  4th St & R St
+4th St & R St  to  4th St & Q St R St Aly
+4th St & Q St R St Aly  to  5th St & Q St R St Aly
+5th St & Q St R St Aly  to  5th St & Q St
+5th St & Q St  to  6th St & Q St
+6th St & Q St  to  6th St & P St
+6th St & P St  to  5th St & P St
+5th St & P St  to  5th St & Q St
+5th St & Q St  to  4th St & Q St
+4th St & Q St  to  4th St & Q St R St Aly
+4th St & Q St R St Aly  to  3rd St & Q St R St Aly
+3rd St & Q St R St Aly  to  3rd St & R St S St Aly
+3rd St & R St S St Aly  to  3rd St & R St
+3rd St & R St  to  3rd St & Q St
+3rd St & Q St  to  4th St & Q St
+4th St & Q St  to  4th St & P St
+4th St & P St  to  5th St & P St
+5th St & P St  to  5th St & O St
+5th St & O St  to  4th St & O St
+4th St & O St  to  5th St & O St
+5th St & O St  to  5th St & N St
+5th St & N St  to  4th St & N St
+4th St & N St  to  3rd St & N St
+3rd St & N St  to  4th St & N St
+4th St & N St  to  4th St & O St
+4th St & O St  to  3rd St & O St
+3rd St & O St  to  4th St & O St
+4th St & O St  to  4th St & P St
+4th St & P St  to  3rd St & P St
+3rd St & P St  to  3rd St & Q St
+3rd St & Q St  to  3rd St & Q St R St Aly
+3rd St & Q St R St Aly  to  3rd St & P St
+3rd St & P St  to  3rd St & O St
+3rd St & O St  to  3rd St & N St O St Aly
+3rd St & N St O St Aly  to  3rd St & N St
+3rd St & N St  to  5th St & N St
+5th St & N St  to  Hudson Aly & N St
+Hudson Aly & N St  to  7th St & N St
+7th St & N St  to  7th St & O St
+7th St & O St  to  7th St & N St
+7th St & N St  to  8th St & N St
+8th St & N St  to  8th St & N St O St Aly
+8th St & N St O St Aly  to  9th St & N St O St Aly
+9th St & N St O St Aly  to  10th St & N St O St Aly
+10th St & N St O St Aly  to  10th St & O St P St Aly
+10th St & O St P St Aly  to  10th St & N St O St Aly
+10th St & N St O St Aly  to  10th St & N St

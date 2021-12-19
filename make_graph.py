@@ -2,21 +2,8 @@ import networkx as nx
 import numpy as np
 import math
 import json
-
-
-"""
-Method for connecting intersections:
-
-    - Select a node
-    - Check for the closest node
-    - If street is shared take node
-        - If street is also shared with a previous found node
-          check distance between the nodes is > distance from current node
-
-    - Repeat until maximum (4) nodes is reached or distance is outside "average" radius
-
-"""
-
+import matplotlib.pyplot as plt
+import gmplot
 
 
 
@@ -55,8 +42,8 @@ xs_to_n = {v : k for (k, v) in n_to_xs.items()}
 
 ## Add each node in store with intersection/gps stored as attributes
 G = nx.Graph()
-for i, point in enumerate(store):
-    G.add_node(i, xs=point, gps=store[point])
+for i, xs in enumerate(store):
+    G.add_node(i, xs=xs, gps=store[xs])
 
 
 
@@ -71,17 +58,68 @@ for i, ix1 in enumerate(store):
 
 
 
+lat, lon = store[n_to_xs[0]]
+gmap = gmplot.GoogleMapPlotter(lat, lon, 15)
+
+
 
 
 ## Link intersections
 
+for n, xs_1 in enumerate(store):
+    neighbors = [None] * 4
+    gps_1 = store[xs_1]
+    streets = xs_1.split(' & ')
+
+    for i in np.argsort(adj[n])[1:7]:
+        xs_2 = n_to_xs[i]
+        gps_2 = store[xs_2]
+
+        if streets[0] in xs_2.split(' & '):
+            if neighbors[0] == None:
+                neighbors[0] = (i, xs_2, gps_2)
+
+            else:
+                gps_n = neighbors[0][2]
+                if min((gps_2[0], gps_n[0])) < gps_1[0] < max((gps_2[0], gps_n[0])) and \
+                   min((gps_2[1], gps_n[1])) < gps_1[1] < max((gps_2[1], gps_n[1])):
+
+                   neighbors[1] = (i, xs_2, gps_2)
 
 
 
+        if streets[1] in xs_2.split(' & '):
+            if neighbors[2] == None:
+                neighbors[2] = (i, xs_2, gps_2)
+
+            else:
+                gps_n = neighbors[2][2]
+                if min((gps_2[0], gps_n[0])) < gps_1[0] < max((gps_2[0], gps_n[0])) and \
+                   min((gps_2[1], gps_n[1])) < gps_1[1] < max((gps_2[1], gps_n[1])):
+                   neighbors[3] = (i, xs_2, gps_2)
+
+
+        if None not in neighbors:
+            break
+
+    
+    for nei in neighbors:
+        if nei != None:
+            G.add_edge(n, nei[0], weight=adj[n, nei[0]])
+            gmap.plot(*zip(*[gps_1, nei[2]]), edge_width=5, color='black')
 
 
 
+gmap.draw('connected.html')
 
+H = nx.algorithms.eulerize(G)
+path = nx.algorithms.eulerian_circuit(H)
+
+with open('path.txt', 'w') as f:
+    for edge in path:
+        xs_1 = n_to_xs[edge[0]]
+        xs_2 = n_to_xs[edge[1]]
+        f.write(xs_1 + '  to  ' + xs_2 + '\n')
 
 
 
