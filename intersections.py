@@ -68,7 +68,7 @@ def get_coords(bounds, sleeps=0, dx=50, dy=50, username='raccoonn'):
 
                 ## If failed write current dictionary then quit/sleep accordingly
                 except:
-                    logging.info('API Call limit reached, writing current dictionary')
+                    logging.warning('API Call limit reached, writing current dictionary')
                     fname = datetime.now().strftime('%H%M%S') + '_xs_gps_store.json'
                     with open('xs_gps/' + fname, 'w') as f:
                         json.dump(store, f, indent=4, sort_keys=True)
@@ -100,13 +100,13 @@ def get_coords(bounds, sleeps=0, dx=50, dy=50, username='raccoonn'):
 if __name__ == '__main__':
 
     ## Load GPS boundaries
-    f_bounds = 'small_bounds.txt'
+    f_bounds = 'bounds_full_grid.txt'
     with open(f_bounds) as f:
         bounds = [[float(n) for n in line.split(', ')] for line in f.read().splitlines()]
 
 
     ## Get intersections within boundaries
-    sleeps, dx, dy = 10, 50, 50
+    sleeps, dx, dy = 10, 150, 150
     store, e_code = get_coords(bounds, sleeps, dx, dy)
 
     logging.info('Function completed, exit code: %d' % e_code)
