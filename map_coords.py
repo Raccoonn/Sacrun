@@ -3,12 +3,17 @@ import json
 
 
 
-def map_intersections(fname):
+def map_intersections(f_bounds, f_coords):
     """
     Extract and plot GPS coordinates for intersections
     """
-    ## Scatter plot GPS data
-    with open(fname) as f:
+    ## Load GPS boundaries
+    with open(f_bounds) as f:
+        bounds = [[float(n) for n in line.split(', ')] for line in f.read().splitlines()]
+        bounds.append(bounds[0])
+
+    ## Load Intersection GPS data
+    with open(f_coords) as f:
         store = json.load(f)
 
     ## Extract GPS coordinates from files
@@ -16,11 +21,13 @@ def map_intersections(fname):
     for key in store:
         gps_store.append(store[key])
 
-    ## Generate google map
+
+    ## Draw map of intersections and boundaries
     lat, lon = gps_store[0]
     gmap = gmplot.GoogleMapPlotter(lat, lon, 15)
+    gmap.plot(*zip(*bounds), edge_width=6, color='blue')
     gmap.scatter(*zip(*gps_store), color='red')
-    gmap.draw('scatter.html')
+    gmap.draw('new_scatter.html')
 
 
 
@@ -29,8 +36,9 @@ def map_intersections(fname):
 
 if __name__ == '__main__':
 
-    fname = 'store.json'
-    map_intersections(fname)
+    f_bounds = 'bounds.txt'
+    f_coords = '224752_final_xs_gps_store.json'
+    map_intersections(f_bounds, f_coords)
     print('\nIntersections plotted')
 
 
