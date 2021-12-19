@@ -51,7 +51,7 @@ with open(fname) as f:
 
 ## Conversion dictionaries for easier xs <-> node number lookup
 n_to_xs = {n : xs for n, xs in enumerate(store)}
-
+xs_to_n = {v : k for (k, v) in n_to_xs.items()}
 
 ## Add each node in store with intersection/gps stored as attributes
 G = nx.Graph()
@@ -71,15 +71,10 @@ for i, ix1 in enumerate(store):
 
 
 
+
+
 ## Link intersections
-for n, x1 in enumerate(store):
-    gps_1 = store[x1]
 
-    closest = np.argsort(adj[n])[1:8]
-
-    for i in closest:
-        x2 = n_to_xs[i]
-        gps_2 = store[x2]
 
 
 
