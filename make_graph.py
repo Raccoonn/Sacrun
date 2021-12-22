@@ -32,7 +32,7 @@ def dist(p1, p2):
 
 
 ## Load GPS data
-fname = 'xs_gps/030316_final_xs_gps_store.json'
+fname = 'xs_gps/1220_004707_final_xs_gps_store.json'
 with open(fname) as f:
     store = json.load(f)
 
@@ -123,7 +123,7 @@ plt.show()
 
 
 
-gmap.draw('connected.html')
+gmap.draw('almost_full_grid.html')
 
 H = nx.algorithms.eulerize(G)
 path = nx.algorithms.eulerian_circuit(H)

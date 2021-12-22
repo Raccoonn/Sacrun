@@ -27,7 +27,7 @@ def map_intersections(f_bounds, f_coords):
     gmap = gmplot.GoogleMapPlotter(lat, lon, 15)
     gmap.plot(*zip(*bounds), edge_width=6, color='blue')
     gmap.scatter(*zip(*gps_store), color='red')
-    gmap.draw('maps/small_bounds_scatter.html')
+    gmap.draw('maps/full_grid.html')
 
 
 
@@ -36,8 +36,8 @@ def map_intersections(f_bounds, f_coords):
 
 if __name__ == '__main__':
 
-    f_bounds = 'small_bounds.txt'
-    f_coords = 'xs_gps/030316_final_xs_gps_store.json'
+    f_bounds = 'bounds_full_grid.txt'
+    f_coords = 'xs_gps/1220_004707_final_xs_gps_store.json'
     map_intersections(f_bounds, f_coords)
     print('\nIntersections plotted')
 
