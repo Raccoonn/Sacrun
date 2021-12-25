@@ -52,14 +52,18 @@ def get_coords(bounds, sleeps=0, dx=50, dy=50, username='raccoonn'):
             ## Only call for values within the designated polygon
             if B.contains(Point((lat, lon))):
 
-                ## Make an API call
-                search = 'lat='+str(lat)+'&lng='+str(lon)+'&username=' + username
-                url = 'http://api.geonames.org/findNearestIntersectionJSON?' + search
-                response = requests.get(url, timeout=5)
-                response.raise_for_status()
-                data = response.json()
-                logging.info('API call made to: ' + url)
-                logging.info('Response: ' + str(data))
+                try:
+                    ## Make an API call
+                    search = 'lat='+str(lat)+'&lng='+str(lon)+'&username=' + username
+                    url = 'http://api.geonames.org/findNearestIntersectionJSON?' + search
+                    response = requests.get(url, timeout=5)
+                    response.raise_for_status()
+                    data = response.json()
+                    logging.info('API call made to: ' + url)
+                    logging.info('Response: ' + str(data))
+                except:
+                    logging.warning('Response failed')
+                    time.sleep(1)
 
                 ## Try value extraction
                 ## NOTE:  API call always returns, but response is different for limit
