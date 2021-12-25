@@ -1,9 +1,12 @@
+
+from networkx.algorithms.bipartite.projection import collaboration_weighted_projected_graph
 import requests
 import numpy as np
 import json
 from datetime import datetime
 import time
 import logging
+from requests.sessions import should_bypass_proxies
 from shapely.geometry import Polygon, Point
 
 
@@ -39,10 +42,13 @@ def get_coords(bounds, sleeps=0, dx=50, dy=50, username='raccoonn'):
     store = {}
     s_it = 0
 
+    prog = ['|', '/', '-', '\\']
+    p_it = 0
     ## Loop through discretized grid
     for lat in np.linspace(lat_min, lat_max, dy):
         for lon in np.linspace(lon_min, lon_max, dx):
-
+            print('Searching for intersections... ' + prog[p_it%4], end='\r')
+            p_it += 1
             ## Only call for values within the designated polygon
             if B.contains(Point((lat, lon))):
 
@@ -69,7 +75,7 @@ def get_coords(bounds, sleeps=0, dx=50, dy=50, username='raccoonn'):
                 ## If failed write current dictionary then quit/sleep accordingly
                 except:
                     logging.warning('API Call limit reached, writing current dictionary')
-                    fname = datetime.now().strftime('%H%M%S') + '_xs_gps_store.json'
+                    fname = datetime.now().strftime('%H%M%S') + '_xs_gps_store_xmas.json'
                     with open('xs_gps/' + fname, 'w') as f:
                         json.dump(store, f, indent=4, sort_keys=True)
 
@@ -84,6 +90,7 @@ def get_coords(bounds, sleeps=0, dx=50, dy=50, username='raccoonn'):
                         logging.warning('API call limit reached, sleeping for one hour...')
                         logging.warning('%d sleeps remaining' % (sleeps-s_it))
                         time.sleep(3600)
+                        print('API call limit reached.  Sleeping...')
 
 
     ## If both loops complete, then entire discretized boundary has been traversed
@@ -106,19 +113,17 @@ if __name__ == '__main__':
 
 
     ## Get intersections within boundaries
-    sleeps, dx, dy = 10, 150, 150
+    sleeps, dx, dy = 500, 200, 200
     store, e_code = get_coords(bounds, sleeps, dx, dy)
 
     logging.info('Function completed, exit code: %d' % e_code)
-
+ 
 
     ## Write final dictionary
     ## Note:  Check log for boudnary completeness
-    fname = datetime.now().strftime('%H%M%S') + '_final_xs_gps_store.json'
+    fname = datetime.now().strftime('%H%M%S') + '_final_xs_gps_store_xmas.json'
     with open('xs_gps/' + fname, 'w') as f:
         json.dump(store, f, indent=4, sort_keys=True)
-
-
 
 
 
