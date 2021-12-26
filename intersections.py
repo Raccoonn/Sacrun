@@ -118,7 +118,7 @@ if __name__ == '__main__':
 
 
     ## Get intersections within boundaries
-    sleeps, dx, dy = 0, 100, 100
+    sleeps, dx, dy = 0, 25, 25
     store, e_code = get_coords(bounds, sleeps, dx, dy)
 
     logging.info('Function completed, exit code: %d' % e_code)

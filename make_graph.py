@@ -35,6 +35,7 @@ class XS:
         """
         ## General information
         self.n = n
+        self.name = streets
         self.streets = streets.split(' & ')
         self.gps = gps
         self.lat, self.lon = gps
@@ -83,7 +84,7 @@ class XS:
 
 
 ## Load GPS data
-fname = 'xs_gps/1226_032453_xs_gps_store_xmas.json'
+fname = 'xs_gps/small_test.json'
 with open(fname) as f:
     store = json.load(f)
 
@@ -123,7 +124,7 @@ for xs in intersections:
 for node in G:
     edges = G.edges(node)
     if len(edges) > 4:
-        print(edges)
+        # print(edges)
         for e in edges:
             gmap.scatter(*zip(intersections[e[0]].gps), color='blue')
             gmap.scatter(*zip(intersections[e[1]].gps), color='red')
@@ -131,13 +132,13 @@ for node in G:
 
 
 ## Draw connected gmap
-gmap.draw('big_test_neighbors.html')
+gmap.draw('small_test_neighbors.html')
 
 
 
 ## Graph information and plot
-# print(len(G.nodes))
-# print(len(G.edges))
+print(len(G.nodes))
+print(len(G.edges))
 # for node in G:
 #     print(G.edges(node))
 
@@ -151,17 +152,16 @@ gmap.draw('big_test_neighbors.html')
 
 
 ## Route inspection
-print(nx.is_eulerian(G))
+# print(nx.is_eulerian(G))
 G = nx.eulerize(G)
-print(nx.has_eulerian_path(G))
+# print(nx.has_eulerian_path(G))
 
 path = list(nx.eulerian_path(G))
 with open('path.txt', 'w') as f:
     for p in path:
         xs_1 = intersections[p[0]]
         xs_2 = intersections[p[1]]
-
-        f.write(str(xs_1.streets) + '  to  ' + str(xs_2.streets) + '\n')
+        f.write(xs_1.name + '  to  ' + xs_2.name + '\n')
 
 
 

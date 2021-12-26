@@ -1,338 +1,123 @@
-['10th St', 'I- 80 Bus']  to  ['9th St', 'I- 80 Bus']
-['9th St', 'I- 80 Bus']  to  ['8th St', 'I- 80 Bus']
-['8th St', 'I- 80 Bus']  to  ['8th St', 'W St']
-['8th St', 'W St']  to  ['8th St', 'V St']
-['8th St', 'V St']  to  ['6th St', 'V St']
-['6th St', 'V St']  to  ['8th St', 'V St']
-['8th St', 'V St']  to  ['9th St', 'V St']
-['9th St', 'V St']  to  ['8th St', 'V St']
-['8th St', 'V St']  to  ['8th St', 'U St']
-['8th St', 'U St']  to  ['9th St', 'U St']
-['9th St', 'U St']  to  ['9th St', 'V St']
-['9th St', 'V St']  to  ['9th St', 'W St']
-['9th St', 'W St']  to  ['8th St', 'W St']
-['8th St', 'W St']  to  ['6th St', 'W St']
-['6th St', 'W St']  to  ['6th St', 'V St']
-['6th St', 'V St']  to  ['5th St', 'V St']
-['5th St', 'V St']  to  ['6th St', 'V St']
-['6th St', 'V St']  to  ['5th St', 'V St']
-['5th St', 'V St']  to  ['5th St', 'W St']
-['5th St', 'W St']  to  ['4th St', 'W St']
-['4th St', 'W St']  to  ['5th St', 'W St']
-['5th St', 'W St']  to  ['6th St', 'W St']
-['6th St', 'W St']  to  ['6th St', 'I- 80 Bus']
-['6th St', 'I- 80 Bus']  to  ['5th St', 'I- 80 Bus']
-['5th St', 'I- 80 Bus']  to  ['5th St', 'W St']
-['5th St', 'W St']  to  ['5th St', 'V St']
-['5th St', 'V St']  to  ['Davini Ln', 'V St']
-['Davini Ln', 'V St']  to  ['4th St', 'V St']
-['4th St', 'V St']  to  ['4th St', 'W St']
-['4th St', 'W St']  to  ['3rd St', 'W St']
-['3rd St', 'W St']  to  ['3rd St', 'I- 80 Bus']
-['3rd St', 'I- 80 Bus']  to  ['I- 5', 'I- 80 Bus']
-['I- 5', 'I- 80 Bus']  to  ['3rd St', 'I- 80 Bus']
-['3rd St', 'I- 80 Bus']  to  ['5th St', 'I- 80 Bus']
-['5th St', 'I- 80 Bus']  to  ['6th St', 'I- 80 Bus']
-['6th St', 'I- 80 Bus']  to  ['8th St', 'I- 80 Bus']
-['8th St', 'I- 80 Bus']  to  ['9th St', 'I- 80 Bus']
-['9th St', 'I- 80 Bus']  to  ['9th St', 'W St']
-['9th St', 'W St']  to  ['10th St', 'W St']
-['10th St', 'W St']  to  ['11th St', 'W St']
-['11th St', 'W St']  to  ['12th St', 'W St']
-['12th St', 'W St']  to  ['13th St', 'W St']
-['13th St', 'W St']  to  ['14th St', 'W St']
-['14th St', 'W St']  to  ['15th St', 'W St']
-['15th St', 'W St']  to  ['16th St', 'W St']
-['16th St', 'W St']  to  ['17th St', 'W St']
-['17th St', 'W St']  to  ['18th St', 'W St']
-['18th St', 'W St']  to  ['19th St', 'W St']
-['19th St', 'W St']  to  ['20th St', 'W St']
-['20th St', 'W St']  to  ['21st St', 'W St']
-['21st St', 'W St']  to  ['22nd St', 'W St']
-['22nd St', 'W St']  to  ['23rd St', 'W St']
-['23rd St', 'W St']  to  ['24th St', 'W St']
-['24th St', 'W St']  to  ['25th St', 'W St']
-['25th St', 'W St']  to  ['26th St', 'W St']
-['26th St', 'W St']  to  ['27th St', 'W St']
-['27th St', 'W St']  to  ['27th St', '29th St']
-['27th St', '29th St']  to  ['27th St', 'V St']
-['27th St', 'V St']  to  ['28th St', 'V St']
-['28th St', 'V St']  to  ['29th St', 'V St']
-['29th St', 'V St']  to  ['29th St', 'U St']
-['29th St', 'U St']  to  ['29th St', 'T St']
-['29th St', 'T St']  to  ['I- 80 Bus', 'T St']
-['I- 80 Bus', 'T St']  to  ['I- 80 Bus', 'S St']
-['I- 80 Bus', 'S St']  to  ['I- 80 Bus', 'R St']
-['I- 80 Bus', 'R St']  to  ['I- 80 Bus', 'S St']
-['I- 80 Bus', 'S St']  to  ['29th St', 'S St']
-['29th St', 'S St']  to  ['29th St', 'T St']
-['29th St', 'T St']  to  ['29th St', 'U St']
-['29th St', 'U St']  to  ['28th St', 'U St']
-['28th St', 'U St']  to  ['28th St', 'V St']
-['28th St', 'V St']  to  ['27th St', 'V St']
-['27th St', 'V St']  to  ['27th St', 'W St']
-['27th St', 'W St']  to  ['29th St', 'W St']
-['29th St', 'W St']  to  ['26th St', 'W St']
-['26th St', 'W St']  to  ['26th St', 'V St']
-['26th St', 'V St']  to  ['27th St', 'V St']
-['27th St', 'V St']  to  ['27th St', 'U St']
-['27th St', 'U St']  to  ['28th St', 'U St']
-['28th St', 'U St']  to  ['28th St', 'T St']
-['28th St', 'T St']  to  ['29th St', 'T St']
-['29th St', 'T St']  to  ['29th St', 'S St']
-['29th St', 'S St']  to  ['29th St', 'R St']
-['29th St', 'R St']  to  ['I- 80 Bus', 'R St']
-['I- 80 Bus', 'R St']  to  ['I- 80 Bus', 'Q St']
-['I- 80 Bus', 'Q St']  to  ['I- 80 Bus', 'P St']
-['I- 80 Bus', 'P St']  to  ['I- 80 Bus', 'Q St']
-['I- 80 Bus', 'Q St']  to  ['29th St', 'Q St']
-['29th St', 'Q St']  to  ['29th St', 'R St']
-['29th St', 'R St']  to  ['29th St', 'S St']
-['29th St', 'S St']  to  ['28th St', 'S St']
-['28th St', 'S St']  to  ['28th St', 'T St']
-['28th St', 'T St']  to  ['27th St', 'T St']
-['27th St', 'T St']  to  ['27th St', 'U St']
-['27th St', 'U St']  to  ['26th St', 'U St']
-['26th St', 'U St']  to  ['26th St', 'V St']
-['26th St', 'V St']  to  ['25th St', 'V St']
-['25th St', 'V St']  to  ['25th St', 'W St']
-['25th St', 'W St']  to  ['26th St', 'W St']
-['26th St', 'W St']  to  ['26th St', 'I- 80 Bus']
-['26th St', 'I- 80 Bus']  to  ['24th St', 'I- 80 Bus']
-['24th St', 'I- 80 Bus']  to  ['23rd St', 'I- 80 Bus']
-['23rd St', 'I- 80 Bus']  to  ['24th St', 'I- 80 Bus']
-['24th St', 'I- 80 Bus']  to  ['24th St', 'W St']
-['24th St', 'W St']  to  ['24th St', 'V St']
-['24th St', 'V St']  to  ['25th St', 'V St']
-['25th St', 'V St']  to  ['25th St', 'U St']
-['25th St', 'U St']  to  ['26th St', 'U St']
-['26th St', 'U St']  to  ['26th St', 'T St']
-['26th St', 'T St']  to  ['27th St', 'T St']
-['27th St', 'T St']  to  ['27th St', 'S St']
-['27th St', 'S St']  to  ['28th St', 'S St']
-['28th St', 'S St']  to  ['28th St', 'R St']
-['28th St', 'R St']  to  ['29th St', 'R St']
-['29th St', 'R St']  to  ['29th St', 'Q St']
-['29th St', 'Q St']  to  ['29th St', 'P St']
-['29th St', 'P St']  to  ['29th St', 'O St']
-['29th St', 'O St']  to  ['29th St', 'P St']
-['29th St', 'P St']  to  ['29th St', 'Q St']
-['29th St', 'Q St']  to  ['28th St', 'Q St']
-['28th St', 'Q St']  to  ['28th St', 'R St']
-['28th St', 'R St']  to  ['27th St', 'R St']
-['27th St', 'R St']  to  ['27th St', 'S St']
-['27th St', 'S St']  to  ['26th St', 'S St']
-['26th St', 'S St']  to  ['26th St', 'T St']
-['26th St', 'T St']  to  ['25th St', 'T St']
-['25th St', 'T St']  to  ['25th St', 'U St']
-['25th St', 'U St']  to  ['24th St', 'U St']
-['24th St', 'U St']  to  ['24th St', 'V St']
-['24th St', 'V St']  to  ['23rd St', 'V St']
-['23rd St', 'V St']  to  ['23rd St', 'W St']
-['23rd St', 'W St']  to  ['23rd St', 'I- 80 Bus']
-['23rd St', 'I- 80 Bus']  to  ['22nd St', 'I- 80 Bus']
-['22nd St', 'I- 80 Bus']  to  ['21st St', 'I- 80 Bus']
-['21st St', 'I- 80 Bus']  to  ['22nd St', 'I- 80 Bus']
-['22nd St', 'I- 80 Bus']  to  ['22nd St', 'W St']
-['22nd St', 'W St']  to  ['22nd St', 'V St']
-['22nd St', 'V St']  to  ['23rd St', 'V St']
-['23rd St', 'V St']  to  ['23rd St', 'U St']
-['23rd St', 'U St']  to  ['24th St', 'U St']
-['24th St', 'U St']  to  ['24th St', 'T St']
-['24th St', 'T St']  to  ['25th St', 'T St']
-['25th St', 'T St']  to  ['25th St', 'S St']
-['25th St', 'S St']  to  ['26th St', 'S St']
-['26th St', 'S St']  to  ['26th St', 'R St']
-['26th St', 'R St']  to  ['27th St', 'R St']
-['27th St', 'R St']  to  ['27th St', 'Q St']
-['27th St', 'Q St']  to  ['28th St', 'Q St']
-['28th St', 'Q St']  to  ['28th St', 'P St']
-['28th St', 'P St']  to  ['29th St', 'P St']
-['29th St', 'P St']  to  ['I- 80 Bus', 'P St']
-['I- 80 Bus', 'P St']  to  ['I- 80 Bus', 'N St']
-['I- 80 Bus', 'N St']  to  ['29th St', 'N St']
-['29th St', 'N St']  to  ['29th St', 'O St']
-['29th St', 'O St']  to  ['28th St', 'O St']
-['28th St', 'O St']  to  ['27th St', 'O St']
-['27th St', 'O St']  to  ['28th St', 'O St']
-['28th St', 'O St']  to  ['28th St', 'P St']
-['28th St', 'P St']  to  ['27th St', 'P St']
-['27th St', 'P St']  to  ['27th St', 'Q St']
-['27th St', 'Q St']  to  ['26th St', 'Q St']
-['26th St', 'Q St']  to  ['26th St', 'R St']
-['26th St', 'R St']  to  ['25th St', 'R St']
-['25th St', 'R St']  to  ['25th St', 'S St']
-['25th St', 'S St']  to  ['24th St', 'S St']
-['24th St', 'S St']  to  ['24th St', 'T St']
-['24th St', 'T St']  to  ['23rd St', 'T St']
-['23rd St', 'T St']  to  ['23rd St', 'U St']
-['23rd St', 'U St']  to  ['22nd St', 'U St']
-['22nd St', 'U St']  to  ['22nd St', 'V St']
-['22nd St', 'V St']  to  ['21st St', 'V St']
-['21st St', 'V St']  to  ['21st St', 'W St']
-['21st St', 'W St']  to  ['21st St', 'I- 80 Bus']
-['21st St', 'I- 80 Bus']  to  ['20th St', 'I- 80 Bus']
-['20th St', 'I- 80 Bus']  to  ['19th St', 'I- 80 Bus']
-['19th St', 'I- 80 Bus']  to  ['20th St', 'I- 80 Bus']
-['20th St', 'I- 80 Bus']  to  ['20th St', 'W St']
-['20th St', 'W St']  to  ['20th St', 'V St']
-['20th St', 'V St']  to  ['21st St', 'V St']
-['21st St', 'V St']  to  ['21st St', 'U St']
-['21st St', 'U St']  to  ['22nd St', 'U St']
-['22nd St', 'U St']  to  ['22nd St', 'T St']
-['22nd St', 'T St']  to  ['23rd St', 'T St']
-['23rd St', 'T St']  to  ['23rd St', 'S St']
-['23rd St', 'S St']  to  ['24th St', 'S St']
-['24th St', 'S St']  to  ['24th St', 'R St']
-['24th St', 'R St']  to  ['25th St', 'R St']
-['25th St', 'R St']  to  ['25th St', 'Q St']
-['25th St', 'Q St']  to  ['26th St', 'Q St']
-['26th St', 'Q St']  to  ['26th St', 'P St']
-['26th St', 'P St']  to  ['27th St', 'P St']
-['27th St', 'P St']  to  ['27th St', 'O St']
-['27th St', 'O St']  to  ['26th St', 'O St']
-['26th St', 'O St']  to  ['26th St', 'P St']
-['26th St', 'P St']  to  ['25th St', 'P St']
-['25th St', 'P St']  to  ['24th St', 'P St']
-['24th St', 'P St']  to  ['25th St', 'P St']
-['25th St', 'P St']  to  ['25th St', 'Q St']
-['25th St', 'Q St']  to  ['24th St', 'Q St']
-['24th St', 'Q St']  to  ['24th St', 'R St']
-['24th St', 'R St']  to  ['23rd St', 'R St']
-['23rd St', 'R St']  to  ['23rd St', 'S St']
-['23rd St', 'S St']  to  ['22nd St', 'S St']
-['22nd St', 'S St']  to  ['22nd St', 'T St']
-['22nd St', 'T St']  to  ['21st St', 'T St']
-['21st St', 'T St']  to  ['21st St', 'U St']
-['21st St', 'U St']  to  ['20th St', 'U St']
-['20th St', 'U St']  to  ['20th St', 'V St']
-['20th St', 'V St']  to  ['19th St', 'V St']
-['19th St', 'V St']  to  ['18th St', 'V St']
-['18th St', 'V St']  to  ['19th St', 'V St']
-['19th St', 'V St']  to  ['19th St', 'W St']
-['19th St', 'W St']  to  ['19th St', 'I- 80 Bus']
-['19th St', 'I- 80 Bus']  to  ['18th St', 'I- 80 Bus']
-['18th St', 'I- 80 Bus']  to  ['16th St', 'I- 80 Bus']
-['16th St', 'I- 80 Bus']  to  ['18th St', 'I- 80 Bus']
-['18th St', 'I- 80 Bus']  to  ['18th St', 'W St']
-['18th St', 'W St']  to  ['18th St', 'V St']
-['18th St', 'V St']  to  ['17th St', 'V St']
-['17th St', 'V St']  to  ['17th St', 'W St']
-['17th St', 'W St']  to  ['17th St', 'V St']
-['17th St', 'V St']  to  ['18th St', 'V St']
-['18th St', 'V St']  to  ['18th St', 'U St']
-['18th St', 'U St']  to  ['20th St', 'U St']
-['20th St', 'U St']  to  ['20th St', 'Vizcaya Walk']
-['20th St', 'Vizcaya Walk']  to  ['20th St', 'T St']
-['20th St', 'T St']  to  ['21st St', 'T St']
-['21st St', 'T St']  to  ['21st St', 'S St']
-['21st St', 'S St']  to  ['22nd St', 'S St']
-['22nd St', 'S St']  to  ['22nd St', 'R St']
-['22nd St', 'R St']  to  ['23rd St', 'R St']
-['23rd St', 'R St']  to  ['23rd St', 'Q St']
-['23rd St', 'Q St']  to  ['24th St', 'Q St']
-['24th St', 'Q St']  to  ['24th St', 'P St']
-['24th St', 'P St']  to  ['23rd St', 'P St']
-['23rd St', 'P St']  to  ['23rd St', 'Q St']
-['23rd St', 'Q St']  to  ['22nd St', 'Q St']
-['22nd St', 'Q St']  to  ['21st St', 'Q St']
-['21st St', 'Q St']  to  ['22nd St', 'Q St']
-['22nd St', 'Q St']  to  ['22nd St', 'R St']
-['22nd St', 'R St']  to  ['21st St', 'R St']
-['21st St', 'R St']  to  ['21st St', 'S St']
-['21st St', 'S St']  to  ['20th St', 'S St']
-['20th St', 'S St']  to  ['20th St', 'T St']
-['20th St', 'T St']  to  ['19th St', 'T St']
-['19th St', 'T St']  to  ['19th St', 'S St']
-['19th St', 'S St']  to  ['20th St', 'S St']
-['20th St', 'S St']  to  ['20th St', 'R St']
-['20th St', 'R St']  to  ['21st St', 'R St']
-['21st St', 'R St']  to  ['21st St', 'Q St']
-['21st St', 'Q St']  to  ['20th St', 'Q St']
-['20th St', 'Q St']  to  ['19th St', 'Q St']
-['19th St', 'Q St']  to  ['19th St', 'S St']
-['19th St', 'S St']  to  ['19th St', 'T St']
-['19th St', 'T St']  to  ['18th St', 'T St']
-['18th St', 'T St']  to  ['18th St', 'U St']
-['18th St', 'U St']  to  ['17th St', 'U St']
-['17th St', 'U St']  to  ['17th St', 'V St']
-['17th St', 'V St']  to  ['16th St', 'V St']
-['16th St', 'V St']  to  ['16th St', 'W St']
-['16th St', 'W St']  to  ['16th St', 'I- 80 Bus']
-['16th St', 'I- 80 Bus']  to  ['15th St', 'I- 80 Bus']
-['15th St', 'I- 80 Bus']  to  ['15th St', 'W St']
-['15th St', 'W St']  to  ['15th St', 'V St']
-['15th St', 'V St']  to  ['16th St', 'V St']
-['16th St', 'V St']  to  ['16th St', 'U St']
-['16th St', 'U St']  to  ['17th St', 'U St']
-['17th St', 'U St']  to  ['17th St', 'T St']
-['17th St', 'T St']  to  ['18th St', 'T St']
-['18th St', 'T St']  to  ['18th St', 'S St']
-['18th St', 'S St']  to  ['19th St', 'S St']
-['19th St', 'S St']  to  ['19th St', 'Q St']
-['19th St', 'Q St']  to  ['20th St', 'Q St']
-['20th St', 'Q St']  to  ['20th St', 'R St']
-['20th St', 'R St']  to  ['18th St', 'R St']
-['18th St', 'R St']  to  ['17th St', 'R St']
-['17th St', 'R St']  to  ['18th St', 'R St']
-['18th St', 'R St']  to  ['18th St', 'S St']
-['18th St', 'S St']  to  ['17th St', 'S St']
-['17th St', 'S St']  to  ['17th St', 'T St']
-['17th St', 'T St']  to  ['16th St', 'T St']
-['16th St', 'T St']  to  ['16th St', 'U St']
-['16th St', 'U St']  to  ['15th St', 'U St']
-['15th St', 'U St']  to  ['15th St', 'V St']
-['15th St', 'V St']  to  ['14th St', 'V St']
-['14th St', 'V St']  to  ['14th St', 'W St']
-['14th St', 'W St']  to  ['13th St', 'W St']
-['13th St', 'W St']  to  ['13th St', 'V St']
-['13th St', 'V St']  to  ['14th St', 'V St']
-['14th St', 'V St']  to  ['14th St', 'U St']
-['14th St', 'U St']  to  ['15th St', 'U St']
-['15th St', 'U St']  to  ['15th St', 'T St']
-['15th St', 'T St']  to  ['16th St', 'T St']
-['16th St', 'T St']  to  ['16th St', 'S St']
-['16th St', 'S St']  to  ['17th St', 'S St']
-['17th St', 'S St']  to  ['17th St', 'R St']
-['17th St', 'R St']  to  ['16th St', 'R St']
-['16th St', 'R St']  to  ['16th St', 'S St']
-['16th St', 'S St']  to  ['15th St', 'S St']
-['15th St', 'S St']  to  ['14th St', 'S St']
-['14th St', 'S St']  to  ['15th St', 'S St']
-['15th St', 'S St']  to  ['15th St', 'T St']
-['15th St', 'T St']  to  ['14th St', 'T St']
-['14th St', 'T St']  to  ['14th St', 'U St']
-['14th St', 'U St']  to  ['13th St', 'U St']
-['13th St', 'U St']  to  ['13th St', 'V St']
-['13th St', 'V St']  to  ['12th St', 'V St']
-['12th St', 'V St']  to  ['12th St', 'W St']
-['12th St', 'W St']  to  ['Riverside Blvd', 'W St']
-['Riverside Blvd', 'W St']  to  ['11th St', 'W St']
-['11th St', 'W St']  to  ['11th St', 'V St']
-['11th St', 'V St']  to  ['12th St', 'V St']
-['12th St', 'V St']  to  ['12th St', 'U St']
-['12th St', 'U St']  to  ['13th St', 'U St']
-['13th St', 'U St']  to  ['13th St', 'T St']
-['13th St', 'T St']  to  ['14th St', 'T St']
-['14th St', 'T St']  to  ['14th St', 'S St']
-['14th St', 'S St']  to  ['13th St', 'S St']
-['13th St', 'S St']  to  ['13th St', 'T St']
-['13th St', 'T St']  to  ['12th St', 'T St']
-['12th St', 'T St']  to  ['11th St', 'T St']
-['11th St', 'T St']  to  ['12th St', 'T St']
-['12th St', 'T St']  to  ['12th St', 'U St']
-['12th St', 'U St']  to  ['11th St', 'U St']
-['11th St', 'U St']  to  ['11th St', 'T St']
-['11th St', 'T St']  to  ['11th St', 'U St']
-['11th St', 'U St']  to  ['10th St', 'U St']
-['10th St', 'U St']  to  ['9th St', 'U St']
-['9th St', 'U St']  to  ['10th St', 'U St']
-['10th St', 'U St']  to  ['11th St', 'U St']
-['11th St', 'U St']  to  ['11th St', 'V St']
-['11th St', 'V St']  to  ['10th St', 'V St']
-['10th St', 'V St']  to  ['9th St', 'V St']
-['9th St', 'V St']  to  ['10th St', 'V St']
-['10th St', 'V St']  to  ['10th St', 'U St']
-['10th St', 'U St']  to  ['10th St', 'V St']
-['10th St', 'V St']  to  ['10th St', 'W St']
-['10th St', 'W St']  to  ['10th St', 'I- 80 Bus']
+10th St & P St  to  9th St & P St
+9th St & P St  to  8th St & P St
+8th St & P St  to  8th St & Q St
+8th St & Q St  to  8th St & R St
+8th St & R St  to  8th St & Rhodin Ln
+8th St & Rhodin Ln  to  7th St & Rhodin Ln
+7th St & Rhodin Ln  to  8th St & Rhodin Ln
+8th St & Rhodin Ln  to  8th St & S St
+8th St & S St  to  8th St & T St
+8th St & T St  to  8th St & U St
+8th St & U St  to  8th St & V St
+8th St & V St  to  8th St & W St
+8th St & W St  to  9th St & W St
+9th St & W St  to  8th St & W St
+8th St & W St  to  6th St & W St
+6th St & W St  to  6th St & V St
+6th St & V St  to  8th St & V St
+8th St & V St  to  9th St & V St
+9th St & V St  to  9th St & W St
+9th St & W St  to  10th St & W St
+10th St & W St  to  10th St & V St
+10th St & V St  to  10th St & U St
+10th St & U St  to  10th St & V St
+10th St & V St  to  9th St & V St
+9th St & V St  to  9th St & U St
+9th St & U St  to  9th St & T St
+9th St & T St  to  8th St & T St
+8th St & T St  to  7th St & T St
+7th St & T St  to  6th St & T St
+6th St & T St  to  7th St & T St
+7th St & T St  to  7th St & S St
+7th St & S St  to  8th St & S St
+8th St & S St  to  9th St & S St
+9th St & S St  to  9th St & T St
+9th St & T St  to  10th St & T St
+10th St & T St  to  10th St & U St
+10th St & U St  to  9th St & U St
+9th St & U St  to  8th St & U St
+8th St & U St  to  6th St & U St
+6th St & U St  to  6th St & V St
+6th St & V St  to  6th St & W St
+6th St & W St  to  5th St & W St
+5th St & W St  to  4th St & W St
+4th St & W St  to  5th St & W St
+5th St & W St  to  5th St & V St
+5th St & V St  to  6th St & V St
+6th St & V St  to  6th St & U St
+6th St & U St  to  6th St & T St
+6th St & T St  to  6th St & U St
+6th St & U St  to  5th St & U St
+5th St & U St  to  5th St & V St
+5th St & V St  to  Davini Ln & V St
+Davini Ln & V St  to  4th St & V St
+4th St & V St  to  4th St & W St
+4th St & W St  to  3rd St & W St
+3rd St & W St  to  3rd St & V St
+3rd St & V St  to  4th St & V St
+4th St & V St  to  4th St & U St
+4th St & U St  to  5th St & U St
+5th St & U St  to  5th St & T St
+5th St & T St  to  6th St & T St
+6th St & T St  to  6th St & S St
+6th St & S St  to  7th St & S St
+7th St & S St  to  7th St & Rhodin Ln
+7th St & Rhodin Ln  to  7th St & R St
+7th St & R St  to  8th St & R St
+8th St & R St  to  9th St & R St
+9th St & R St  to  9th St & S St
+9th St & S St  to  10th St & S St
+10th St & S St  to  10th St & T St
+10th St & T St  to  10th St & S St
+10th St & S St  to  10th St & R St
+10th St & R St  to  9th St & R St
+9th St & R St  to  9th St & Q St
+9th St & Q St  to  8th St & Q St
+8th St & Q St  to  7th St & Q St
+7th St & Q St  to  7th St & R St
+7th St & R St  to  E Socap Walk & R St
+E Socap Walk & R St  to  6th St & R St
+6th St & R St  to  6th St & S St
+6th St & S St  to  5th St & S St
+5th St & S St  to  5th St & T St
+5th St & T St  to  4th St & T St
+4th St & T St  to  4th St & U St
+4th St & U St  to  3rd St & U St
+3rd St & U St  to  3rd St & V St
+3rd St & V St  to  3rd St & U St
+3rd St & U St  to  3rd St & T St
+3rd St & T St  to  4th St & T St
+4th St & T St  to  4th St & S St
+4th St & S St  to  5th St & S St
+5th St & S St  to  5th St & R St
+5th St & R St  to  6th St & R St
+6th St & R St  to  6th St & Q St
+6th St & Q St  to  7th St & Q St
+7th St & Q St  to  7th St & P St
+7th St & P St  to  6th St & P St
+6th St & P St  to  6th St & Q St
+6th St & Q St  to  5th St & Q St
+5th St & Q St  to  5th St & R St
+5th St & R St  to  4th St & R St
+4th St & R St  to  4th St & S St
+4th St & S St  to  3rd St & S St
+3rd St & S St  to  3rd St & T St
+3rd St & T St  to  3rd St & S St
+3rd St & S St  to  3rd St & R St
+3rd St & R St  to  4th St & R St
+4th St & R St  to  4th St & Q St
+4th St & Q St  to  3rd St & Q St
+3rd St & Q St  to  3rd St & R St
+3rd St & R St  to  3rd St & Q St
+3rd St & Q St  to  4th St & Q St
+4th St & Q St  to  5th St & Q St
+5th St & Q St  to  5th St & P St
+5th St & P St  to  6th St & P St
+6th St & P St  to  7th St & P St
+7th St & P St  to  8th St & P St
+8th St & P St  to  9th St & P St
+9th St & P St  to  9th St & Q St
+9th St & Q St  to  10th St & Q St
+10th St & Q St  to  10th St & R St
+10th St & R St  to  10th St & Q St
+10th St & Q St  to  10th St & P St
