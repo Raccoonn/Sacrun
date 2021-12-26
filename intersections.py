@@ -30,6 +30,7 @@ def get_coords(bounds, sleeps=0, dx=50, dy=50, username='raccoonn'):
                         format='%(asctime)s %(levelname)s %(message)s',
                         datefmt='%Y-%m-%d %H:%M:%S')
 
+
     ## Determine min and max boundaries for discretization
     lats, lons = zip(*bounds)
     lat_min, lat_max = min(lats), max(lats)
@@ -79,7 +80,7 @@ def get_coords(bounds, sleeps=0, dx=50, dy=50, username='raccoonn'):
                 ## If failed write current dictionary then quit/sleep accordingly
                 except:
                     logging.warning('API Call limit reached, writing current dictionary')
-                    fname = datetime.now().strftime('%H%M%S') + '_xs_gps_store_xmas.json'
+                    fname = datetime.now().strftime('%m%d_%H%M%S') + '_xs_gps_store_xmas.json'
                     with open('xs_gps/' + fname, 'w') as f:
                         json.dump(store, f, indent=4, sort_keys=True)
 
@@ -125,7 +126,7 @@ if __name__ == '__main__':
 
     ## Write final dictionary
     ## Note:  Check log for boudnary completeness
-    fname = datetime.now().strftime('%H%M%S') + '_final_xs_gps_store_xmas.json'
+    fname = datetime.now().strftime('%M%D_%H%M%S') + '_final_xs_gps_store_xmas.json'
     with open('xs_gps/' + fname, 'w') as f:
         json.dump(store, f, indent=4, sort_keys=True)
 

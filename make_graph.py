@@ -28,6 +28,57 @@ def dist(p1, p2):
 
 
 
+class XS:
+    def __init__(self, n, streets, gps):
+        """
+        Intersection object
+        """
+        ## General information
+        self.n = n
+        self.streets = streets.split(' & ')
+        self.gps = gps
+        self.lat, self.lon = gps
+
+
+    def find_neighbors(self, intersections, max_n=4):
+        """
+        Find all nearest neighbors
+            - Maximum = 4
+            - Minimum = 2
+        """
+        ## Initialize neighbors
+        self.neighbors = [None]*max_n
+
+        ## Adjacency to other nodes, intersections perserves node index
+        self.adj = [dist(xs.gps, self.gps) for xs in intersections]
+
+        ## Maximum check twenty closest nodes (Skipping self node)
+        for idx in np.argsort(self.adj)[:10]:
+            xs = intersections[idx]
+            if xs.n != self.n:
+                for n, i in zip(range(2), range(0,4,2)):
+                    ## Check matching street name
+                    if self.streets[n] == xs.streets[n]:
+                        ## Add closest
+                        if self.neighbors[i] == None:
+                            self.neighbors[i] = xs
+
+                        ## Next neighbor check distances
+                        elif self.neighbors[i+1] == None:
+                            d_ax = dist(self.neighbors[i].gps, self.gps)
+                            d_bx = dist(xs.gps, self.gps)
+                            d_ab = dist(xs.gps, self.neighbors[i].gps)
+                            if d_ax <= d_ab and d_bx <= d_ab:
+                                self.neighbors[i+1] = xs
+
+                    ## Break if four neighbors found, otherise continue search
+                    if None not in self.neighbors:
+                        return
+
+
+
+
+
 
 
 
@@ -36,104 +87,60 @@ fname = 'xs_gps/1220_004707_final_xs_gps_store.json'
 with open(fname) as f:
     store = json.load(f)
 
-## Conversion dictionaries for easier xs <-> node number lookup
-n_to_xs = {n : xs for n, xs in enumerate(store)}
-xs_to_n = {v : k for (k, v) in n_to_xs.items()}
 
-## Add each node in store with intersection/gps stored as attributes
+##
+## No alleys
+##
+store = {key:val for key,val in store.items() if 'Aly' not in key}
+
+
+## Add all nodes to list
+intersections = []
+for n, streets in enumerate(store):
+    intersections.append(XS(n, streets, store[streets]))
+
+## Find all neighbors for each node
+for xs in intersections:
+    xs.find_neighbors(intersections)
+
+
+
+
+
+# xs = intersections[99]
+# print(xs.streets)
+# for n in xs.neighbors:
+#     if n != None:
+#         print(n.streets)
+#     else:
+#         print("no neighbor")
+
+
+xs_0 = intersections[0]
+gmap = gmplot.GoogleMapPlotter(xs_0.lat, xs_0.lon, 15)
+
+## Build graph
 G = nx.Graph()
-for i, xs in enumerate(store):
-    G.add_node(i, xs=xs, gps=store[xs])
+for xs in intersections:
+    for nbr in xs.neighbors:
+        if nbr != None:
+            G.add_edge(xs.n, nbr.n, weight=xs.adj[nbr.n])
+            gmap.plot(*zip(*[xs.gps, nbr.gps]), edge_width=13, color='black')
 
 
 
-## Create fully connected adjacency matrix
-adj = np.zeros((len(store), len(store)))
-
-for i, ix1 in enumerate(store):
-    for j, ix2 in enumerate(store):
-        p1 = store[ix1]
-        p2 = store[ix2]
-        adj[i,j] = dist(p1, p2)
-
-
-
-lat, lon = store[n_to_xs[0]]
-gmap = gmplot.GoogleMapPlotter(lat, lon, 15)
-
-
-
-
-## Link intersections
-
-for i, xs_1 in enumerate(store):
-    neighbors = [None] * 4
-    gps_1 = store[xs_1]
-    streets = xs_1.split(' & ')
-
-
-    for j in np.argsort(adj[i])[1:5]:
-        xs_2 = n_to_xs[j]
-        gps_2 = store[xs_2]
-
-        if streets[0] in xs_2.split(' & '):
-            if neighbors[0] == None:
-                neighbors[0] = (j, xs_2, gps_2)
-
-            elif neighbors[1] == None:
-                gps_n = neighbors[0][2]
-                if min((gps_2[0], gps_n[0])) < gps_1[0] < max((gps_2[0], gps_n[0])) and \
-                   min((gps_2[1], gps_n[1])) < gps_1[1] < max((gps_2[1], gps_n[1])):
-
-                   neighbors[1] = (j, xs_2, gps_2)
-
-
-
-
-        if streets[1] in xs_2.split(' & '):
-            if neighbors[2] == None:
-                neighbors[2] = (j, xs_2, gps_2)
-
-            elif neighbors[3] == None:
-                gps_n = neighbors[2][2]
-                if min((gps_2[0], gps_n[0])) < gps_1[0] < max((gps_2[0], gps_n[0])) and \
-                   min((gps_2[1], gps_n[1])) < gps_1[1] < max((gps_2[1], gps_n[1])):
-
-                   neighbors[3] = (j, xs_2, gps_2)
-
-
-
-        if None not in neighbors:
-            break
-
-    
-    for n in neighbors:
-        if n != None:
-            G.add_edge(i, n[0], weight=adj[i, n[0]])
-            gmap.plot(*zip(*[gps_1, n[2]]), edge_width=5, color='black')
-
+gmap.draw('new neighbor mapping_no alleys.html')
 
 
 print(len(G.nodes))
 print(len(G.edges))
-print(n_to_xs[84])
+
+for node in G:
+    print(G.edges(node))
+
 
 nx.draw(G, with_labels=True)
+
+# nx.draw_networkx_edges(G, pos=nx.spring_layout(G))
+
 plt.show()
-
-
-
-gmap.draw('almost_full_grid.html')
-
-H = nx.algorithms.eulerize(G)
-path = nx.algorithms.eulerian_circuit(H)
-
-with open('path.txt', 'w') as f:
-    for edge in path:
-        xs_1 = n_to_xs[edge[0]]
-        xs_2 = n_to_xs[edge[1]]
-        f.write(xs_1 + '  to  ' + xs_2 + '\n')
-
-
-
-
