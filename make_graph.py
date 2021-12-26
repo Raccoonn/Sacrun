@@ -83,7 +83,7 @@ class XS:
 
 
 ## Load GPS data
-fname = 'xs_gps/1220_004707_final_xs_gps_store.json'
+fname = 'xs_gps/1226_032453_xs_gps_store_xmas.json'
 with open(fname) as f:
     store = json.load(f)
 
@@ -105,17 +105,7 @@ for xs in intersections:
 
 
 
-
-
-# xs = intersections[99]
-# print(xs.streets)
-# for n in xs.neighbors:
-#     if n != None:
-#         print(n.streets)
-#     else:
-#         print("no neighbor")
-
-
+## Initialize map
 xs_0 = intersections[0]
 gmap = gmplot.GoogleMapPlotter(xs_0.lat, xs_0.lon, 15)
 
@@ -125,22 +115,68 @@ for xs in intersections:
     for nbr in xs.neighbors:
         if nbr != None:
             G.add_edge(xs.n, nbr.n, weight=xs.adj[nbr.n])
-            gmap.plot(*zip(*[xs.gps, nbr.gps]), edge_width=13, color='black')
+            gmap.plot(*zip(*[xs.gps, nbr.gps]), edge_width=6)
 
 
 
-gmap.draw('new neighbor mapping_no alleys.html')
-
-
-print(len(G.nodes))
-print(len(G.edges))
-
+## Specify scatter for inspection neighbors
 for node in G:
-    print(G.edges(node))
+    edges = G.edges(node)
+    if len(edges) > 4:
+        print(edges)
+        for e in edges:
+            gmap.scatter(*zip(intersections[e[0]].gps), color='blue')
+            gmap.scatter(*zip(intersections[e[1]].gps), color='red')
 
 
-nx.draw(G, with_labels=True)
 
+## Draw connected gmap
+gmap.draw('big_test_neighbors.html')
+
+
+
+## Graph information and plot
+# print(len(G.nodes))
+# print(len(G.edges))
+# for node in G:
+#     print(G.edges(node))
+
+
+# nx.draw(G, with_labels=True)
 # nx.draw_networkx_edges(G, pos=nx.spring_layout(G))
+# plt.show()
 
+
+
+
+
+## Route inspection
+print(nx.is_eulerian(G))
+G = nx.eulerize(G)
+print(nx.has_eulerian_path(G))
+
+path = list(nx.eulerian_path(G))
+with open('path.txt', 'w') as f:
+    for p in path:
+        xs_1 = intersections[p[0]]
+        xs_2 = intersections[p[1]]
+
+        f.write(str(xs_1.streets) + '  to  ' + str(xs_2.streets) + '\n')
+
+
+
+
+## Plot route
+x, y = [], []
+for p in path:
+    x.append(-intersections[p[0]].lat)
+    y.append(-intersections[p[1]].lon)
+
+fig, ax1 = plt.subplots()
+
+ax1.set_facecolor('black')
+
+c = np.linspace(0, 1, len(x))
+
+plt.scatter(x, y, c=c, cmap='plasma')
 plt.show()

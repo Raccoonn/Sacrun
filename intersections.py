@@ -12,7 +12,7 @@ from shapely.geometry import Polygon, Point
 
 
 
-def get_coords(bounds, sleeps=0, dx=50, dy=50, username='raccoonn'):
+def get_coords(bounds, sleeps=0, dx=50, dy=50, username='trainbro'):
     """
     Given boundary coordinates discretize and walk through grid
     Store all located intersections, sleep at API call limit
@@ -112,13 +112,13 @@ def get_coords(bounds, sleeps=0, dx=50, dy=50, username='raccoonn'):
 if __name__ == '__main__':
 
     ## Load GPS boundaries
-    f_bounds = 'bounds_full_grid.txt'
+    f_bounds = 'small_bounds.txt'
     with open(f_bounds) as f:
         bounds = [[float(n) for n in line.split(', ')] for line in f.read().splitlines()]
 
 
     ## Get intersections within boundaries
-    sleeps, dx, dy = 500, 200, 200
+    sleeps, dx, dy = 0, 100, 100
     store, e_code = get_coords(bounds, sleeps, dx, dy)
 
     logging.info('Function completed, exit code: %d' % e_code)
@@ -126,7 +126,8 @@ if __name__ == '__main__':
 
     ## Write final dictionary
     ## Note:  Check log for boudnary completeness
-    fname = datetime.now().strftime('%M%D_%H%M%S') + '_final_xs_gps_store_xmas.json'
+    # fname = datetime.now().strftime('%m%d_%H%M%S') + '_final_xs_gps_store_xmas.json'
+    fname = 'small_test.json'
     with open('xs_gps/' + fname, 'w') as f:
         json.dump(store, f, indent=4, sort_keys=True)
 
