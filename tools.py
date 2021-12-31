@@ -1,3 +1,4 @@
+
 import networkx as nx
 import numpy as np
 import math
@@ -7,6 +8,10 @@ import gmplot
 
 
 
+
+"""
+Graph construction from coordinates
+"""
 
 
 def dist(p1, p2):
@@ -28,10 +33,13 @@ def dist(p1, p2):
 
 
 
+
 class XS:
     def __init__(self, n, streets, gps):
         """
         Intersection object
+            - Attributes:  Information about the given intersection; index, name, gps, etc.
+            - Methods:  Finding nearest neighbors given a list of intersection objects
         """
         ## General information
         self.n = n
@@ -80,105 +88,69 @@ class XS:
 
 
 
+"""
+Read/Write tools
+"""
 
+def load_coords(fname, alleys=False):
+    """
+    Given json file of intesection coordinates returns
+    list of intersection objects
+    """
+    ## Load GPS data
+    with open(fname) as f:
+        store = json.load(f)
 
+    ## Exclude alleys if desired
+    if alleys == False:
+        store = {key:val for key,val in store.items() if 'Aly' not in key}
 
-## Load GPS data
-fname = 'xs_gps/small_test.json'
-with open(fname) as f:
-    store = json.load(f)
-
-
-##
-## No alleys
-##
-store = {key:val for key,val in store.items() if 'Aly' not in key}
-
-
-## Add all nodes to list
-intersections = []
-for n, streets in enumerate(store):
-    intersections.append(XS(n, streets, store[streets]))
-
-## Find all neighbors for each node
-for xs in intersections:
-    xs.find_neighbors(intersections)
-
-
-
-## Initialize map
-xs_0 = intersections[0]
-gmap = gmplot.GoogleMapPlotter(xs_0.lat, xs_0.lon, 15)
-
-## Build graph
-G = nx.Graph()
-for xs in intersections:
-    for nbr in xs.neighbors:
-        if nbr != None and nbr != xs:
-            G.add_edge(xs.n, nbr.n, weight=xs.adj[nbr.n])
-            gmap.plot(*zip(*[xs.gps, nbr.gps]), edge_width=6)
-
-
-
-## Specify scatter for inspection neighbors
-for node in G:
-    edges = G.edges(node)
-    if len(edges) == 4:
-        # print(edges)
-        for e in edges:
-            gmap.scatter(*zip(intersections[e[1]].gps), color='red')
-            gmap.scatter(*zip(intersections[e[0]].gps), color='blue')
-
-
-
-## Draw connected gmap
-gmap.draw('small_test_neighbors.html')
-
-
-
-## Graph information and plot
-print(len(G.nodes))
-print(len(G.edges))
-# for node in G:
-#     print(G.edges(node))
-
-
-nx.draw(G, with_labels=True)
-# nx.draw_networkx_edges(G, pos=nx.spring_layout(G))
-plt.show()
+    ## Add all nodes to list
+    intersections = []
+    for n, streets in enumerate(store):
+        intersections.append(XS(n, streets, store[streets]))
 
 
 
 
 
-## Route inspection
-# print(nx.is_eulerian(G))
-G = nx.eulerize(G)
-print(len(G.nodes))
-print(len(G.edges))
-# print(nx.has_eulerian_path(G))
 
-path = list(nx.eulerian_circuit(G))
-with open('path.txt', 'w') as f:
-    for p in path:
-        xs_1 = intersections[p[0]]
-        xs_2 = intersections[p[1]]
-        f.write(xs_1.name + '  to  ' + xs_2.name + '\n')
+"""
+gmplot Mapping Tools
+"""
 
 
+def map_intersections(f_bounds, f_coords, map_fname):
+    """
+    Extract and plot GPS coordinates for intersections
+    """
+    ## Load GPS boundaries
+    with open(f_bounds) as f:
+        bounds = [[float(n) for n in line.split(', ')] for line in f.read().splitlines()]
+        bounds.append(bounds[0])
+
+    ## Load Intersection GPS data
+    with open(f_coords) as f:
+        store = json.load(f)
+
+    ## Extract GPS coordinates from files
+    gps_store = []
+    for key in store:
+        gps_store.append(store[key])
 
 
-## Plot route
-x, y = [], []
-for p in path:
-    x.append(intersections[p[0]].lat)
-    y.append(intersections[p[1]].lon)
+    ## Draw map of intersections and boundaries
+    lat, lon = gps_store[0]
+    gmap = gmplot.GoogleMapPlotter(lat, lon, 15)
+    gmap.plot(*zip(*bounds), edge_width=6, color='blue')
+    gmap.scatter(*zip(*gps_store), color='red')
+    gmap.draw('maps/%s.html' % map_fname)
 
-fig, ax1 = plt.subplots()
 
-ax1.set_facecolor('black')
 
-c = np.linspace(0, 1, len(x))
 
-plt.scatter(y, x, c=c, cmap='plasma')
-plt.show()
+
+
+
+
+

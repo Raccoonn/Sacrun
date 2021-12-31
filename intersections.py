@@ -1,18 +1,14 @@
-
-from networkx.algorithms.bipartite.projection import collaboration_weighted_projected_graph
 import requests
 import numpy as np
 import json
 from datetime import datetime
 import time
 import logging
-from requests.sessions import should_bypass_proxies
 from shapely.geometry import Polygon, Point
 
 
 
-
-def get_coords(bounds, sleeps=0, dx=50, dy=50, username='trainbro'):
+def get_coords(bounds, sleeps, dx, dy, username):
     """
     Given boundary coordinates discretize and walk through grid
     Store all located intersections, sleep at API call limit
@@ -34,13 +30,7 @@ def get_coords(bounds, sleeps=0, dx=50, dy=50, username='trainbro'):
     ## Determine min and max boundaries for discretization
     lats, lons = zip(*bounds)
     lat_min, lat_max = min(lats), max(lats)
-    lon_min, lon_max = min(lons), max(lons)
-
-    ## Define polygon with given bounds
-    B = Polygon(bounds)
-
-    ## Create storage dictionary, initialize sleep iterator
-    store = {}
+    lon_min, lon_max = min(lons), max(lons) 
     s_it = 0
 
     prog = ['|', '/', '-', '\\']
@@ -119,9 +109,9 @@ if __name__ == '__main__':
 
     ## Get intersections within boundaries
     sleeps, dx, dy = 0, 25, 25
-    store, e_code = get_coords(bounds, sleeps, dx, dy)
+    store, exit_code = get_coords(bounds, sleeps, dx, dy, 'trainbro')
 
-    logging.info('Function completed, exit code: %d' % e_code)
+    logging.info('Function completed, exit code: %d' % exit_code)
  
 
     ## Write final dictionary
