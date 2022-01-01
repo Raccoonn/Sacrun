@@ -101,8 +101,17 @@ for n, streets in enumerate(store):
     intersections.append(XS(n, streets, store[streets]))
 
 ## Find all neighbors for each node
+G = nx.Graph()
 for xs in intersections:
     xs.find_neighbors(intersections)
+    G.add_node(xs.n, name=xs.name, streets=xs.streets, neighbors=xs.neighbors,
+               gps=xs.gps, lat=xs.lat, lon=xs.lon)
+
+print(G.nodes)
+
+
+input('here')
+
 
 
 
